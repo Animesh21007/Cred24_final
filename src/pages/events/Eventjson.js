@@ -29,12 +29,12 @@ const EventJson = [
 		],
 		prizes: [
 			{
-				1: 'Sr. First Prize: Rs. 10000',
-				2: 'Sr. Second Prize: Rs. 6000',
+				1: 'Sr. First Prize: Rs. 5000',
+				2: 'Sr. Second Prize: Rs. 3000',
 			},
 			{
-				1: 'Jr. First Prize: Rs. 10000',
-				2: 'Jr. Second Prize: Rs. 6000',
+				1: 'Jr. First Prize: Rs. 5000',
+				2: 'Jr. Second Prize: Rs. 3000',
 			},
 		],
 		datetime: [
@@ -76,12 +76,12 @@ const EventJson = [
 		],
 		prizes: [
 			{
-				1: 'Sr. First Prize: Rs. 10000',
-				2: 'Sr. Second Prize: Rs. 6000',
+				1: 'Sr. First Prize: Rs. 5000',
+				2: 'Sr. Second Prize: Rs. 3000',
 			},
 			{
-				1: 'Jr. First Prize: Rs. 10000',
-				2: 'Jr. Second Prize: Rs. 6000',
+				1: 'Jr. First Prize: Rs. 5000',
+				2: 'Jr. Second Prize: Rs. 3000',
 			},
 		],
 		datetime: [
@@ -365,7 +365,7 @@ const EventJson = [
 				phone: '7058009555',
 			},
 			{
-				name: 'Roshan Behra Kumar',
+				name: 'Behra Roshan Kumar',
 				phone: '8355990623',
 			},
 		],
