@@ -11,6 +11,18 @@ const cartSlice = createSlice({
 	name: 'cart',
 	initialState,
 	reducers: {
+		buyPass: (state, action) => {
+			action.payload.map((item) => {
+				if (item.id !== 111) {
+					state.cart.push({
+						id: item.id,
+						name: item.heading,
+						cost: 0,
+					});
+				}
+				state.totalSum += 250;
+			});
+		},
 		addtoCart: (state, action) => {
 			state.cart.push(action.payload);
 			state.totalSum += action.payload.cost;
@@ -24,18 +36,6 @@ const cartSlice = createSlice({
 		emptyCart: (state) => {
 			state.cart = [];
 			state.totalSum = 0;
-		},
-		buyPass: (state, action) => {
-			state.totalSum = 250;
-			action.payload.map((item) => {
-				if (item.id !== 111) {
-					state.cart.push({
-						id: item.id,
-						name: item.heading,
-						cost: 0,
-					});
-				}
-			});
 		},
 		setLogin: (state) => {
 			state.loginStatus = true;

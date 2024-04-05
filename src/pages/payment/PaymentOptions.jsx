@@ -112,81 +112,81 @@ const PaymentOptions = ({ total }) => {
 		});
 	};
 
-	const handleClick = async () => {
-		const event_list = [];
-		cart.map((data) => {
-			event_list.push(data.id);
-		});
+	// const handleClick = async () => {
+	// 	const event_list = [];
+	// 	cart.map((data) => {
+	// 		event_list.push(data.id);
+	// 	});
 
-		const id = toast.loading('Please wait...', {
-			style: {
-				background: '#1e3257',
-				margin: '7px',
-				borderRadius: '7px',
-				color: 'white',
-				border: '1px solid gray',
-			},
-		});
+	// 	const id = toast.loading('Please wait...', {
+	// 		style: {
+	// 			background: '#1e3257',
+	// 			margin: '7px',
+	// 			borderRadius: '7px',
+	// 			color: 'white',
+	// 			border: '1px solid gray',
+	// 		},
+	// 	});
 
-		// openModal();
+	// 	// openModal();
 
-		await Requests.order({
-			event_list,
-			transaction_id: data.upi_id,
-			amount: total,
-		})
-			.then((res) => {
-				console.log(res);
-				toast.dismiss();
-				if (res.data.message === 'order already placed') {
-					toast.warning('Order already placed!', {
-						style: {
-							background: '#1e3257',
-							margin: '7px',
-							borderRadius: '7px',
-							color: 'white',
-							border: '1px solid gray',
-						},
-					});
-				} else if (res.data.message === 'Transaction already performed') {
-					toast.warning(res.data.message, {
-						style: {
-							background: '#1e3257',
-							margin: '7px',
-							borderRadius: '7px',
-							color: 'white',
-							border: '1px solid gray',
-						},
-					});
-				} else {
-					toast.success(res.data.message);
-					dispatch(emptyCart());
-					setIsOpen(true);
-				}
-			})
-			.catch((err) => {
-				console.log(err);
-				toast.dismiss();
-				toast.update(
-					id,
-					{
-						render: 'Payment Error',
-						type: 'error',
-						isLoading: false,
-						autoClose: 5000,
-					},
-					{
-						style: {
-							background: '#1e3257',
-							margin: '7px',
-							borderRadius: '7px',
-							color: 'white',
-							border: '1px solid gray',
-						},
-					}
-				);
-			});
-	};
+	// 	await Requests.order({
+	// 		event_list,
+	// 		transaction_id: data.upi_id,
+	// 		amount: total,
+	// 	})
+	// 		.then((res) => {
+	// 			console.log(res);
+	// 			toast.dismiss();
+	// 			if (res.data.message === 'order already placed') {
+	// 				toast.warning('Order already placed!', {
+	// 					style: {
+	// 						background: '#1e3257',
+	// 						margin: '7px',
+	// 						borderRadius: '7px',
+	// 						color: 'white',
+	// 						border: '1px solid gray',
+	// 					},
+	// 				});
+	// 			} else if (res.data.message === 'Transaction already performed') {
+	// 				toast.warning(res.data.message, {
+	// 					style: {
+	// 						background: '#1e3257',
+	// 						margin: '7px',
+	// 						borderRadius: '7px',
+	// 						color: 'white',
+	// 						border: '1px solid gray',
+	// 					},
+	// 				});
+	// 			} else {
+	// 				toast.success(res.data.message);
+
+	// 				setIsOpen(true);
+	// 			}
+	// 		})
+	// 		.catch((err) => {
+	// 			console.log(err);
+	// 			toast.dismiss();
+	// 			toast.update(
+	// 				id,
+	// 				{
+	// 					render: 'Payment Error',
+	// 					type: 'error',
+	// 					isLoading: false,
+	// 					autoClose: 5000,
+	// 				},
+	// 				{
+	// 					style: {
+	// 						background: '#1e3257',
+	// 						margin: '7px',
+	// 						borderRadius: '7px',
+	// 						color: 'white',
+	// 						border: '1px solid gray',
+	// 					},
+	// 				}
+	// 			);
+	// 		});
+	// };
 
 	const onCheckout = (data) => {
 		const handleClick = async () => {
@@ -237,8 +237,10 @@ const PaymentOptions = ({ total }) => {
 						});
 					} else {
 						toast.success(res.data.message);
-						dispatch(emptyCart());
 						setIsOpen(true);
+						setTimeout(() => {
+							dispatch(emptyCart());
+						}, 100);
 					}
 				})
 				.catch((err) => {

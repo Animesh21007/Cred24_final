@@ -20,10 +20,10 @@ const MyTeam = () => {
 
 	// console.log(teamInfo);
 
-	const copyToClipboard = (data) => {
-		navigator.clipboard.writeText(data);
-		toast.success('Copied to Clipboard successfully!');
-	};
+	// const copyToClipboard = (data) => {
+	// 	navigator.clipboard.writeText(data);
+	// 	toast.success('Copied to Clipboard successfully!');
+	// };
 
 	useEffect(() => {
 		const fetchTeamInfo = async () => {
@@ -47,79 +47,104 @@ const MyTeam = () => {
 			) : !teamInfo.length ? (
 				<div className="mx-8 my-4 text-xl font-semi">No Team Created</div>
 			) : (
-				<div>
+				<div className="max-h-[400px]">
 					{teamInfo.map((team) => (
 						<div
 							key={team.id}
-							className="border-2 p-2 rounded-lg flex flex-row w-[94%] mx-auto justify-between">
-							<div className="mx-2 my-auto border-2">
+							className="flex flex-col justify-between p-2 mx-auto font-[Poppins] border-2 rounded-lg sm:flex-row mb-4 border-violet-300">
+							<div className="flex items-center py-2 mx-2 my-auto border-b-2 md:border-none md:flex-col">
+								<p className="text-center text-cyan-200">
+									{team.event.event_name}
+								</p>
 								<img
-									src={Logo[teamInfo[0].event.event_id]}
+									src={Logo[team.event.event_id]}
 									alt="Logo"
-									width="100px"
-									height="100px"
-									className="bg-black"
+									width="70px"
+									height="70px"
+									className="mx-auto bg-black"
 								/>
+								<div className="px-2 text-center">
+									<pre>{`Max Team Size:`}</pre>
+									<p> {team.event.group_size}</p>
+								</div>
 							</div>
-							<div className="flex flex-row p-2 border-2 justify-evenly">
-								<div className="">
-									<div className="grid grid-cols-2 p-2 border-2 justify-items-center align-center">
-										<h2 className="px-1">Name</h2>
-										<p>{team.team_name}</p>
-									</div>
-									<div>
-										<div className="grid grid-cols-2 p-2 border-2 justify-items-center">
-											<p>Team ID </p>
-											<p>
-												{team.team_id}
+							<div className="flex mx-2 justify-evenly font-[Poppins] text-slate-200 text-center md:border-l-2 border-slate-400 border-b-2 md:border-none md:flex-col">
+								<div className="w-[100%] grid grid-cols-2 grid-row-3 items-center">
+									<h2 className="px-1 text-blue-400">Name :</h2>
+									<p>{team.team_name}</p>
+									<p className="text-center text-blue-400">{'Team \nID :'}</p>
+									<div className="flex flex-col items-center justify-center px-1">
+										<p className="px-2 ">{team.team_id}</p>
 
-												<button onClick={() => copyToClipboard(team.team_id)}>
-													<span id="default-icon">
-														<svg
-															class="w-3.5 h-3.5"
-															aria-hidden="true"
-															xmlns="http://www.w3.org/2000/svg"
-															fill="currentColor"
-															viewBox="0 0 18 20">
-															<path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
-														</svg>
-													</span>
-												</button>
-											</p>
-										</div>
+										{/* <button
+											className="flex flex-row hover:text-gray-700"
+											onClick={() => copyToClipboard(team.team_id)}>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="feather feather-copy">
+												<rect
+													x="9"
+													y="9"
+													width="13"
+													height="13"
+													rx="2"
+													ry="2"></rect>
+												<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+											</svg>
+										</button> */}
 									</div>
-									<div className="grid grid-cols-2 p-2 border-2 justify-items-center">
-										<pre className="text-center">{'Team \nPassword'}</pre>
-										<p>
-											{team.team_password}
-											<button onClick={() => copyToClipboard(team.team_id)}>
-												<span id="default-icon">
-													<svg
-														class="w-3.5 h-3.5"
-														aria-hidden="true"
-														xmlns="http://www.w3.org/2000/svg"
-														fill="currentColor"
-														viewBox="0 0 18 20">
-														<path d="M16 1h-3.278A1.992 1.992 0 0 0 11 0H7a1.993 1.993 0 0 0-1.722 1H2a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2Zm-3 14H5a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-4H5a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-5H5a1 1 0 0 1 0-2h2V2h4v2h2a1 1 0 1 1 0 2Z" />
-													</svg>
-												</span>
-											</button>
-										</p>
+									<p className="text-center text-blue-400">
+										{'Team \nPassword :'}
+									</p>
+									<div className="flex flex-col items-center">
+										<p className="px-3">{team.team_password}</p>
+										{/* <button onClick={() => copyToClipboard(team.team_id)}>
+											<svg
+												xmlns="http://www.w3.org/2000/svg"
+												width="24"
+												height="24"
+												viewBox="0 0 24 24"
+												fill="none"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												class="feather feather-copy">
+												<rect
+													x="9"
+													y="9"
+													width="13"
+													height="13"
+													rx="2"
+													ry="2"></rect>
+												<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+											</svg>
+										</button> */}
 									</div>
 								</div>
 							</div>
-							<div className="w-[40%] border-2 p-2">
-								<div className="">
-									<h2>Team Members</h2>
-									<ol>
-										{team.user.map((user) => (
-											<li key={user.email} className="p-1">
-												{user.username}
+							<div className="md:w-[40%] md:border-l-2 p-2 flex flex-row justify-between items-center mx-2 border-slate-400 border-b-2 md:border-none md:flex-col">
+								<div className="flex flex-col justify-evenly h-[100%]">
+									<h2 className="text-lg text-center text-cyan-400">
+										Team Members
+									</h2>
+									<ol className="text-left">
+										{team.user.map((user, idx) => (
+											<li key={user.email} className="flex flex-row p-1">
+												<p className="px-1">{idx + 1}.</p>
+												<p>{user.username}</p>
 											</li>
 										))}
 									</ol>
 								</div>
-								<p>Max Team Size: {team.event.group_size}</p>
 							</div>
 						</div>
 					))}
@@ -310,8 +335,8 @@ const CreateTeam = () => {
 			</label>
 			<input
 				{...register('team_name', { minLength: 4 })}
-				placeholder="Username"
-				className="!bg-sky-900 placeholder:text-[1.07rem] border-2 mx-auto border-blue-800 px-4 sm:text-sm rounded-lg focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 block p-2 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[80%] border-none"
+				placeholder="Team Name"
+				className="font-[Poppins] !bg-sky-900 placeholder:text-[1.07rem] border-2 mx-auto border-blue-800 px-4 sm:text-sm rounded-lg focus:outline-none focus:border-sky-500 focus:ring-2 focus:ring-sky-500 block p-2 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 w-[80%] border-none"
 				required
 			/>
 			<label
@@ -322,7 +347,7 @@ const CreateTeam = () => {
 			<select
 				{...register('event_id')}
 				id="countries"
-				className="bg-sky-900 text-slate-300 border border-gray-300 border-none text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] mx-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 focus:ring-2 dark:focus:border-blue-500 font-semibold focus:outline-none"
+				className="font-[Poppins] bg-sky-900 text-slate-300 border border-gray-300 border-none text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] mx-auto p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 focus:ring-2 dark:focus:border-blue-500 font-semibold focus:outline-none"
 				// required
 			>
 				<option selected>Choose an Event</option>
