@@ -20,8 +20,8 @@ const Events = () => {
 	const navigate = useNavigate();
 	function handlePass() {
 		dispatch(emptyCart());
-		dispatch(totalsome(100));
-		setTimeout(dispatch(buyPass(Event)), 100);
+		// dispatch(totalsome(100));
+		// setTimeout(dispatch(buyPass(Event)), 100);
 		// console.log(object);
 		if (LoginStatus) {
 			navigate('/paymentpass');

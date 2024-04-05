@@ -20,11 +20,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Prasad Khatake',
-				phone: '8767039196',
+				phone: '+91 87670 39196',
 			},
 			{
 				name: 'Animesh Jain',
-				phone: '7385170022',
+				phone: '+91 73851 70022',
 			},
 		],
 		prizes: [
@@ -67,11 +67,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Harsh Khandelwal',
-				phone: '9529993590',
+				phone: '+91 95299 93590',
 			},
 			{
 				name: 'Omkar Wagholikar',
-				phone: '9604779804',
+				phone: '+91 96047 79804',
 			},
 		],
 		prizes: [
@@ -115,22 +115,22 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Karan Mundhada',
-				phone: '8080792381',
+				phone: '+91 80807 92381',
 			},
 			{
 				name: 'Kshitij Dhapse',
-				phone: '9145299114',
+				phone: '+91 93258 15244',
 			},
 		],
 		prizes: [
 			{
-				1: 'First Prize: Rs. 3000',
-				2: 'Second Prize: Rs. 2000',
+				1: 'First Prize: Rs. 5000',
+				2: 'Second Prize: Rs. 3000',
 			},
 		],
 		datetime: [
-			'Start Time: 30th March 21:00 IST',
-			'End Time: 6th May 21:00 IST',
+			'Start Time: 13th April 21:00 IST',
+			'End Time: 14th April 21:00 IST',
 		],
 	},
 	{
@@ -157,11 +157,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Abhishek Bhosale',
-				phone: '8446165714',
+				phone: '+91 84461 65714',
 			},
 			{
 				name: 'Maheshwar Bhosale',
-				phone: '9067507393',
+				phone: '+91 90675 07393',
 			},
 		],
 		prizes: [
@@ -178,7 +178,7 @@ const EventJson = [
 	{
 		heading: 'B-Plan',
 		body: 'Put your logical, aptitude and business knowledge and analyzing expertise to crack some time-bound challenges. Showcase your communication skills through presentations and ideation. Showcase strong decision-making skills at crucial timings.',
-		id: 0,
+		id: 105,
 		structure: {
 			1: 'Aptitude Round: Round-1 is aptitude round will contain questions based on data interpretation and basic aptitude with a business flavor in it followed by stock and share market.',
 			2: 'Auction Round: Qualified participants will be asked to bring three more members to form a team of 4. Every team will be given an equal budget and with excellent decision-making and analysis, you have to buy Companies. Teams will be shortlisted according to the addition of Company ratings for the next round.',
@@ -237,11 +237,15 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Renuka Dad',
-				phone: '9975910877',
+				phone: '+91 99759 10877',
 			},
 			{
 				name: 'Pratik Walale',
-				phone: '9422622709',
+				phone: '+91 94226 22709',
+			},
+			{
+				name: 'Ansh Bhutada',
+				phone: '+91 81490 76503',
 			},
 		],
 		prizes: [
@@ -251,9 +255,9 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 (Slot 1): 12th May 2023, 12:00 PM to 12:30 PM',
-			'Round 1 (Slot 2): 12th May 2023, 05:00 PM to 05:30 PM',
-			'Round 2: 13th May 2023, 05:00 PM to 07:00 PM',
+			'Round 1 (Slot 1): 12th April 2024, 4:30 PM to 06:00 PM',
+			// 'Round 1 (Slot 2): 12th April 2024, 05:00 PM to 05:30 PM',
+			'Round 2: 13th April 2024, 05:00 PM to 07:00 PM',
 		],
 	},
 	{
@@ -272,7 +276,7 @@ const EventJson = [
 			8: 'Celebrate Diversity: Embrace diversity and inclusivity within the data science community.',
 			9: 'Stay Positive: Maintain a positive attitude, even in the face of challenges, and persevere towards success.',
 		},
-		id: 104,
+		id: 107,
 		amount: 50,
 		count: 1,
 		team: 'Individual event',
@@ -280,11 +284,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Prem Gaikwad',
-				phone: '9823392274',
+				phone: '+91 98233 92274',
 			},
 			{
 				name: 'Mangesh Salunke',
-				phone: '9001589696',
+				phone: '+91 90015 89696',
 			},
 		],
 		prizes: [
@@ -299,44 +303,41 @@ const EventJson = [
 		],
 	},
 	{
-		heading: 'QUIZ',
-		body: 'Brainstorm on the questions ranging from Greek mythology to world politics, from Shakespeare to business gurus. Set out on a voyage through mind-boggling questions captained by a witty quiz master. Flex your IQ in a set of three quizzes, designed to be a battle of wits. MELA Quiz',
-		structure: {
-			1: 'General Quiz: It includes everything from robotics to politics. Test your GK!',
-			2: 'MELA Quiz: Movies Entertainment Literature and Arts (MELA) is all set to test your knowledge of literature, arts and entertainment. If you are an entertainment lover, this is for you!',
-			3: 'BizTech Quiz: If you are passionate about marketing, economics and Business, then BizTech is the ultimate questionnaire you need to answer.',
-		},
+		heading: 'Quizillionaire',
+		body: 'Dive into a whirlwind of knowledge with Quizillionaire! It is a completely offline event ! Journey through eclectic questions spanning bollywood/hollywood to sports, from Shakespeare to business gurus. Led by a charismatic quiz master, embark on three rounds of mind-bending quizzes, from general knowledge to current affairs, sports, memes, movies, and entertainment.The grand finale awaits with a Kaun Banega Crorepati format round ! Flex your IQ and compete for glory !',
+		structure: `Round 1 : \n•Menti meter round Semi final \n•Buzzer round Finals 
+			\n•KBC(Kaun Banega Crorepati Round)`,
 		rules: {
-			1: 'Candidate pursuing an undergraduate program at any institute is allowed to participate. Participants are encouraged to maintain a copy of their ID card',
-			2: 'Participants can register online on the official Credenz website.',
-			3: 'Each team will have a maximum of one participant.',
-			4: 'Marking scheme and other rules will be announced on the day of the event itself.',
+			1: 'Candidate pursuing an undergraduate program at any institute is allowed to participate.',
+			2: ' Participants are encouraged to maintain a copy of their ID card.',
+			3: 'Participants can register online on the official Credenz website.',
+			4: 'Each team will have a maximum of two participants.',
+			5: 'Marking scheme and other rules will be announced on the day of the event itself.',
+			6: 'Enjoy the Journey: Embrace the competition, learn from the experience, and relish the opportunity to collaborate with others.',
 		},
 		id: 108,
 		amount: 50,
 		count: 1,
-		team: 'Maximum 2 players are allowed',
-		max: 2,
+		team: 'Team Event : Maximum team of 2 people',
+		max: 1,
 		contact: [
 			{
 				name: 'Jeeya Shah',
-				phone: '9834056254',
+				phone: '+91 98340 56254',
 			},
-			// {
-			// 	name: 'Samir Hendre',
-			// 	phone: '9819261702',
-			// },
+			{
+				name: 'Mitra Barve',
+				phone: '+91 94223 14442',
+			},
 		],
 		prizes: [
 			{
-				1: 'First Prize: Rs. 2000 (For each Category)',
-				2: 'Second prize: Rs. 1000 (For each Category)',
+				1: 'To Be Declared',
+				// 2: 'Second Prize: Rs. 3000',
+				// 3: 'Third Prize: Rs. 1000',
 			},
 		],
-		datetime: [
-			'Round 1 : 12th April 2024, 5:00 PM to 6:30 PM',
-			'Round 2 : 13th April 2024, 5:00 PM to 6:30 PM',
-		],
+		datetime: ['Start Time: 12th April 2024', 'End Time: 14th April 2024'],
 	},
 	{
 		heading: 'CRETRONIX',
@@ -362,11 +363,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Nishant Deshpande',
-				phone: '7058009555',
+				phone: '+91 70580 09555',
 			},
 			{
-				name: 'Behra Roshan Kumar',
-				phone: '8355990623',
+				name: 'Behara Roshan Kumar',
+				phone: '+91 83559 90623',
 			},
 		],
 		prizes: [
@@ -403,11 +404,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Sarthak Phadnis',
-				phone: '9930611330',
+				phone: '+91 99306 11330',
 			},
 			{
 				name: 'Shreya Bansod',
-				phone: '7972616766',
+				phone: '+91 79726 16766',
 			},
 		],
 		prizes: [
@@ -419,7 +420,7 @@ const EventJson = [
 		datetime: [
 			'Round 1 Start: 8th April 2024',
 			'Round 1 Submission : 11th April 2024, 11:59 PM',
-			'Round 2: 13th April 2023, 10:00 AM to 6:00 PM (Offline)',
+			'Round 2: 13th April 2024, 10:00 AM to 6:00 PM (Offline)',
 		],
 	},
 	{
@@ -482,11 +483,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Chinmay Dixit',
-				phone: '8605288723',
+				phone: '+91 86052 88723',
 			},
 			{
 				name: 'Shruti Shinde',
-				phone: '9309021275',
+				phone: '+91 93090 21275',
 			},
 		],
 		prizes: [
@@ -522,11 +523,11 @@ const EventJson = [
 		contact: [
 			{
 				name: 'Prem Gaikwad',
-				phone: '9823392274',
+				phone: '+91 98233 92274',
 			},
 			{
 				name: 'Maheshwar Bhosale',
-				phone: '9067507393',
+				phone: '+91 90675 07393',
 			},
 		],
 		prizes: [

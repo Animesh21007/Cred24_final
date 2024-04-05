@@ -89,7 +89,7 @@ const Profile = () => {
 		<div className=" md:w-[100%] w-[fit-content] bg-[#0f1b3] select-none rounded-xl">
 			<div className="md:w-[85%] w-[100%] h-[100%] m-auto bg-[#0f1b34] text-white rounded-xl">
 				<ProfileContext.Provider value={profileInfo}>
-					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 border-2 border-purple-900">
+					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 border-4 border-purple-900">
 						<div className="flex flex-col flex-1 border-b-2 md:pr-2 border-violet-600">
 							<div className="mx-auto md:w-[100%] w-[90%] border-4 flex flex-col items-center justify-center text-center md:flex-row md:justify-evenly h-[50%] border-teal-800">
 								<div className="p-4 mx-auto md:p-1">
@@ -106,7 +106,7 @@ const Profile = () => {
 									<p className="py-2 text-md">{profileInfo.username}</p>
 								</div>
 							</div>
-							<div className="flex flex-row justify-evenly text-start font-[Poppins] border-slate-400 border4 border-l-0 border-t-0 border-b-0 border-r-0 h-[50%]">
+							<div className="flex flex-row justify-evenly text-start font-[Poppins] border-slate-400 border-0 h-[50%]">
 								<div className="flex flex-col px-2 justify-evenly md:w-[40%] font-[Poppins] md:font-[AzonixRegular] text-blue-300 ">
 									<p className="flex flex-row py-2 sm:py-0">
 										<img
@@ -141,11 +141,11 @@ const Profile = () => {
 										Orders :
 									</p>
 								</div>
-								<div className="flex flex-col  justify-evenly w-[55%] text-sm md:text-lg text-slate-300 text-center md:border-r-2 border-purple-700">
-									<p className="border-t-2 border-b-2 border-teal-800 bg-blue-950">
+								<div className="flex flex-col  justify-evenly w-[70%] text-sm md:text-lg text-slate-300 text-center md:border--2 border-purple-700">
+									<p className="border-t-2 border-b-2 border-teal-800 bg-blue-950 overflow-x-scroll [&::-webkit-scrollbar]:[height:2px] ">
 										{profileInfo.institute}
 									</p>
-									<p className="py-1 text-sm border-t-2 border-b-2 border-teal-800 bg-blue-950">
+									<p className="py-1 text-sm border-t-2 border-b-2 border-teal-800 bg-blue-950 overflow-x-scroll [&::-webkit-scrollbar]:[height:2px]">
 										{profileInfo.email}
 									</p>
 									<p className="border-t-2 border-b-2 border-teal-800 bg-blue-950">
@@ -157,7 +157,7 @@ const Profile = () => {
 								</div>
 							</div>
 						</div>
-						<div className="flex-[1.7] flex flex-col md:justify-between mt-4 md:mt-0 m-0 md:mx-2">
+						<div className="flex-[1.5] flex flex-col md:justify-between mt-4 md:mt-0 m-0 md:mx-2">
 							{' '}
 							<div className="w-full px-2 pb-4 sm:px-0">
 								<Tab.Group>
@@ -168,10 +168,10 @@ const Profile = () => {
 												className={({ selected }) =>
 													classNames(
 														'w-full rounded-lg py-2.5 text-sm font-medium leading-5',
-														'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring-2',
+														'ring-white/60 ring-offset2 ring-offset-blue-400 focus:outline-none focus:rin-2',
 														selected
-															? 'bg-white text-blue-700 shadow'
-															: 'text-blue-100 hover:bg-white/[0.12] hover:text-white'
+															? 'bg-sky-950 text-cyan-100 shadow ring-2 ring-blue-500'
+															: 'text-blue-200 hover:bg-white/[0.12] hover:text-white'
 													)
 												}>
 												{category}
@@ -181,7 +181,7 @@ const Profile = () => {
 									<Tab.Panels className="mt-2 min-h-[340px]">
 										{Object.values(categories).map((posts, idx) => (
 											<Tab.Panel
-												key={Math.random(0, 1) * 113}
+												key={Math.random(0, 1) * idx}
 												className={classNames(
 													'rounded-xl bg-[#0f1b34] p-3 md:px-3 px-0',
 													'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none '

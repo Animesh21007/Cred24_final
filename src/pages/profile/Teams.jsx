@@ -20,10 +20,10 @@ const MyTeam = () => {
 
 	// console.log(teamInfo);
 
-	// const copyToClipboard = (data) => {
-	// 	navigator.clipboard.writeText(data);
-	// 	toast.success('Copied to Clipboard successfully!');
-	// };
+	const copyToClipboard = (data) => {
+		navigator.clipboard.writeText(data);
+		toast.success(`Copied to Clipboard!`);
+	};
 
 	useEffect(() => {
 		const fetchTeamInfo = async () => {
@@ -68,66 +68,29 @@ const MyTeam = () => {
 									<p> {team.event.group_size}</p>
 								</div>
 							</div>
-							<div className="flex mx-2 justify-evenly font-[Poppins] text-slate-200 text-center md:border-l-2 border-slate-400 border-b-2 md:border-none md:flex-col">
-								<div className="w-[100%] grid grid-cols-2 grid-row-3 items-center">
+							<div className="h-[revert] -mx-2 flex  justify-evenly font-[Poppins] text-slate-200 text-center md:border-l-2 border-slate-400 border-b-2 md:border-none md:flex-col">
+								<div className="w-[100%] grid grid-cols-2 grid-row-3 h-[100%] items-center">
 									<h2 className="px-1 text-blue-400">Name :</h2>
 									<p>{team.team_name}</p>
-									<p className="text-center text-blue-400">{'Team \nID :'}</p>
+									<p className="text-center text-blue-400 border-1 border-blue-600">
+										{'Team \nID :'}
+									</p>
 									<div className="flex flex-col items-center justify-center px-1">
-										<p className="px-2 ">{team.team_id}</p>
-
-										{/* <button
-											className="flex flex-row hover:text-gray-700"
+										<button
+											className="px-2 border-b-2  border-blue-400 hover:text-slate-500"
 											onClick={() => copyToClipboard(team.team_id)}>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												class="feather feather-copy">
-												<rect
-													x="9"
-													y="9"
-													width="13"
-													height="13"
-													rx="2"
-													ry="2"></rect>
-												<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-											</svg>
-										</button> */}
+											{team.team_id}
+										</button>
 									</div>
 									<p className="text-center text-blue-400">
 										{'Team \nPassword :'}
 									</p>
 									<div className="flex flex-col items-center">
-										<p className="px-3">{team.team_password}</p>
-										{/* <button onClick={() => copyToClipboard(team.team_id)}>
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												width="24"
-												height="24"
-												viewBox="0 0 24 24"
-												fill="none"
-												stroke="currentColor"
-												stroke-width="2"
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												class="feather feather-copy">
-												<rect
-													x="9"
-													y="9"
-													width="13"
-													height="13"
-													rx="2"
-													ry="2"></rect>
-												<path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-											</svg>
-										</button> */}
+										<button
+											onClick={() => copyToClipboard(team.team_password)}
+											className="px-3 border-b-2  border-blue-400 hover:text-slate-500">
+											{team.team_password}
+										</button>
 									</div>
 								</div>
 							</div>
