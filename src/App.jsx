@@ -30,7 +30,7 @@ function App() {
 			<ToastContainer />
 			<div className=" md:grid [&::-webkit-scrollbar]:[width:2px]">
 				<Navbar />
-				<div className="min-h-[80vh] pb-[4rem] mt-[4rem] grid items-center md:h-[100vh] appi [&::-webkit-scrollbar]:[width:2px] max-h-[-webkit-fill-available]">
+				<div className="min-h-[80vh] pb-[4rem] mt-[4rem] grid items-center md:min-h-[100vh] appi [&::-webkit-scrollbar]:[width:2px] max-h-[-webkit-fill-available]">
 					{/* <Suspense fallback={<Loader />}> */}
 					<Routes>
 						<Route path="/" element={<Landing />} />
