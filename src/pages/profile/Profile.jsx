@@ -92,7 +92,7 @@ const Profile = () => {
 					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 border-4 border-purple-900">
 						<div className="flex flex-col flex-1 border-b-2 md:pr-2 border-violet-600">
 							<div className="mx-auto md:w-[100%] w-[90%] border-4 flex flex-col items-center justify-center text-center md:flex-row md:justify-evenly h-[50%] border-teal-800">
-								<div className="p-4 mx-auto md:p-1">
+								<div className="p-4 mx-0 md:p-1">
 									<img
 										src={profilePhoto}
 										alt="ProfilePhoto"

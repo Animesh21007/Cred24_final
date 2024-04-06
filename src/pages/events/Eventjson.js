@@ -4,8 +4,10 @@ const EventJson = [
 		body: 'Put your logical acumen and coding expertise to the test as you clash with a round of perplexing MCQs followed by a set of time-bound coding challenges,carefully designed to assess your command over programming in the language of your choice- Python, C or C++. Showcase your technical proficiency as you have a go at competitive coding with plenty to learn and nothing to lose.',
 		id: 101,
 		structure: {
-			1: "Round-1: A 28 minute round of MCQs for individuals as well as a team(max 2 people) contenders  based on coding concepts in C/C++, Java and python, divided into Juniors and Seniors category. Juniors including F.E’s and S.E's, seniors including T.E’s and B.E’s  where you would also be provided with 3 boonful lifelines(description will be provided in the game itself) and the marking scheme would be as follows:- The primary marks allotted are +4 if answered correctly and -2 if the answer for a particular question is incorrect. If a question attempted is incorrect, then from the next question +2 marks are allotted for each correctly answered question, else -1 until you get a correct answer for upcoming questions.",
-			2: 'Round-2: A 2 hour long round where each team or individuals have to solve 6-8 core competitive coding questions. Questions would be a blend of Data-Structures and Algorithms and mind bending Competitive programming Questions which the contenders would have to solve and pave their path to victory. Note: Junior level questions would be comparatively a little less challenging than the Senior level. Languges allowed to code are C/C++, Java and Python. Judging for round 2 will be based on the time and space efficiency of your code to solve the given challenges in restricted time.',
+			1: "Round-1: A 28 minute round of MCQs for individuals as well as a team(max 2 people) contenders  based on coding concepts in C/C++, Java and python, divided into Juniors and Seniors category. Juniors including F.E’s and S.E's, seniors including T.E’s and B.E’s  where you would also be provided with 3 boonful lifelines(description will be provided in the game itself).",
+			2: 'The marking scheme would be as follows:- The primary marks allotted are +4 if answered correctly and -2 if the answer for a particular question is incorrect. If a question attempted is incorrect, then from the next question +2 marks are allotted for each correctly answered question, else -1 until you get a correct answer for upcoming questions.',
+			3: 'Round-2: A 2 hour long round where each team or individuals have to solve 6-8 core competitive coding questions. Questions would be a blend of Data-Structures and Algorithms and mind bending Competitive programming Questions which the contenders would have to solve and pave their path to victory. ',
+			4: 'Note: Junior level questions would be comparatively a little less challenging than the Senior level. Languges allowed to code are C/C++, Java and Python. Judging for round 2 will be based on the time and space efficiency of your code to solve the given challenges in restricted time.',
 		},
 		rules: {
 			1: 'Contenders are not allowed to use multiple smart devices while solving the test and it would be considered as malpractice if Caught ',
@@ -56,8 +58,10 @@ const EventJson = [
 			6: 'You will have two attempts to answer a particular question. In the first attempt, the marking scheme will be +4 0. In the second attempt, the marking scheme will be changed to +2 -2.',
 		},
 		structure: {
-			1: "Round-1(Logic Round): A 30 minute round of Numerical Answer of Questions for individuals as well as a team(max 2 people) contenders  based on coding concepts in C/C++, Java and python divided into Juniors and Seniors category. Juniors including F.E’s and S.E's, seniors including T.E’s and B.E’s (Python, C/C++ for both the categories) where you would also be provided with 3 boonful lifelines(description will be provided in the game itself) and the marking scheme would be as follows:- The primary marks allotted are +4 if answered correctly and if the answer for a particular question is incorrect then the contenders gets second attempt +2 marks are allotted for the correctly answered question, else -2 and for the upcoming question again same marking scheme is repeated.",
-			2: 'Round-2(Decipher and code Round): A 2 hour long round where each team or individuals have to solve 6 core code based questions with increasing difficulty and without the help of any Lifelines. Questions would be a blend of Data-Structures and Algorithms and mind bending Competitive programming Questions which the contenders would have to solve and pave their path to victory. Note: Junior level questions would be comparatively a little less challenging than the Senior level. Judging for round 2 will be based on the time and space efficiency of your code to solve the given challenges in restricted time.',
+			1: "Round-1(Logic Round): A 30 minute round of Numerical Answer of Questions for individuals as well as a team(max 2 people) contenders  based on coding concepts in C/C++, Java and python divided into Juniors and Seniors category. Juniors including F.E’s and S.E's, seniors including T.E’s and B.E’s (Python, C/C++ for both the categories) where you would also be provided with 3 boonful lifelines(description will be provided in the game itself).",
+			2: 'The marking scheme would be as follows:- The primary marks allotted are +4 if answered correctly and if the answer for a particular question is incorrect then the contenders gets second attempt +2 marks are allotted for the correctly answered question, else -2 and for the upcoming question again same marking scheme is repeated.',
+			3: 'Round-2(Decipher and code Round): A 2 hour long round where each team or individuals have to solve 6 core code based questions with increasing difficulty and without the help of any Lifelines. Questions would be a blend of Data-Structures and Algorithms and mind bending Competitive programming Questions which the contenders would have to solve and pave their path to victory. Note: Junior level questions would be comparatively a little less challenging than the Senior level.',
+			4: 'Judging for round 2 will be based on the time and space efficiency of your code to solve the given challenges in restricted time.',
 		},
 		id: 102,
 		amount: 50,
@@ -345,7 +349,7 @@ const EventJson = [
 		structure: {
 			1: 'There are 2 groups- Senior and junior',
 			2: 'FE & SE - junior and TE & BE - senior',
-			3: 'Round 1: It will consist of Multiple Choice Questions (MCQs) based on theoretical and practical concepts of electronics,embedded systems,microcontrollers,IOT,VLSI. There will be 30 questions for a time limit of 60 minutes. Domains and divided into groups',
+			3: '\nRound 1: It will consist of Multiple Choice Questions (MCQs) based on theoretical and practical concepts of electronics,\n  embedded systems,microcontrollers,IOT,VLSI. There will be 30 questions for a time limit of 60 minutes. Domains and divided into groups',
 			4: 'Round 2  : Participants will be given a problem statement and they are supposed to implement the circuit with the help of hardware components.',
 		},
 		rules: {
@@ -387,8 +391,8 @@ const EventJson = [
 		structure: {
 			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
 			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given repo for the problem statement.',
-			3: 'To View the problem statements, visit https://github.com/Credenz-Web-Weaver',
-			4: 'Submit your ideas here. https://forms.gle/khmDuuHNbb2ioJ8g9',
+			// 3: 'To View the problem statements, visit https://github.com/Credenz-Web-Weaver',
+			// 4: 'Submit your ideas on this site : https://forms.gle/khmDuuHNbb2ioJ8g9',
 		},
 		rules: {
 			1: 'Each team can consist of a maximum of 3 members.',

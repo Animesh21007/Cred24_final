@@ -100,7 +100,7 @@ const Cart = () => {
 				});
 				navigate('/payment');
 			} else {
-				toast.warning('Order for a Event is already placed!', {
+				toast.warning('Order for This Event is already placed!', {
 					style: {
 						background: '#1e3257',
 						margin: '7px',

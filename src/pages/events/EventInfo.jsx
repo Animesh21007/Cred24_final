@@ -98,22 +98,46 @@ const EventInfo = ({ data }) => {
 				{typeof structure !== 'string' ? (
 					quizCategories.map((itm, inx) => {
 						return (
-							<div className="flex my-2" key={inx * Math.random(0, 1)}>
+							<div
+								className="flex my-2 text-wrap"
+								key={inx * Math.random(0, 1)}>
 								{id !== 111 ? (
 									<>
-										<p className="px-2 pt-1 font-semibold text-justify">
+										<p className="px-2 pt-1 font-semibold text-left">
 											{inx + 1}.
 										</p>
-										<pre className={'p-1 '}>{itm}</pre>
+										<p className={'p-1 '}>{itm}</p>
 									</>
 								) : (
-									<p className="p-1">{itm}</p>
+									<pre className="p-1 text-balance w-[80%]">{itm}</pre>
 								)}
 							</div>
 						);
 					})
 				) : (
 					<div className={'px-2 my-2 text-cente'}>{structure}</div>
+				)}
+				{id === 110 ? (
+					<div>
+						<p className="py-1">
+							3. To View the problem statements, visit{' '}
+							<a
+								href="https://github.com/Credenz-Web-Weaver"
+								className="underline underline-blue-500 text-blue-400">
+								https://github.com/Credenz-Web-Weaver
+							</a>
+						</p>
+						<p className="py-1">
+							4. Submit your ideas here :
+							<a
+								href="https://forms.gle/khmDuuHNbb2ioJ8g9"
+								className="underline underline-blue-500 text-blue-400">
+								https://forms.gle/khmDuuHNbb2ioJ8g9
+							</a>
+						</p>
+					</div>
+				) : (
+					''
 				)}
 			</div>,
 		],

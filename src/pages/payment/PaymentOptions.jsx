@@ -65,7 +65,7 @@ const PaymentOptions = ({ total }) => {
 	const { register, handleSubmit } = useForm();
 	let [isOpen, setIsOpen] = useState(false);
 	let [upiId, setupiID] = useState(0);
-	const [selectedUpi, setSelectedUpi] = useState(1);
+	const [upiData, setupiData] = useState();
 	const cart = useSelector((state) => state.cart.cart);
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -93,103 +93,9 @@ const PaymentOptions = ({ total }) => {
 	}
 
 	function openModal() {
-		// setIsOpen(true);
+		setIsOpen(true);
 	}
 	const onConfirm = () => {
-		// if (openModal
-		// )
-		closeModal();
-		dispatch(emptyCart());
-		navigate('/profile');
-		toast.success('Ticked Booked successfully!', {
-			style: {
-				background: '#1e3257',
-				margin: '7px',
-				borderRadius: '7px',
-				color: 'white',
-				border: '1px solid gray',
-			},
-		});
-	};
-
-	// const handleClick = async () => {
-	// 	const event_list = [];
-	// 	cart.map((data) => {
-	// 		event_list.push(data.id);
-	// 	});
-
-	// 	const id = toast.loading('Please wait...', {
-	// 		style: {
-	// 			background: '#1e3257',
-	// 			margin: '7px',
-	// 			borderRadius: '7px',
-	// 			color: 'white',
-	// 			border: '1px solid gray',
-	// 		},
-	// 	});
-
-	// 	// openModal();
-
-	// 	await Requests.order({
-	// 		event_list,
-	// 		transaction_id: data.upi_id,
-	// 		amount: total,
-	// 	})
-	// 		.then((res) => {
-	// 			console.log(res);
-	// 			toast.dismiss();
-	// 			if (res.data.message === 'order already placed') {
-	// 				toast.warning('Order already placed!', {
-	// 					style: {
-	// 						background: '#1e3257',
-	// 						margin: '7px',
-	// 						borderRadius: '7px',
-	// 						color: 'white',
-	// 						border: '1px solid gray',
-	// 					},
-	// 				});
-	// 			} else if (res.data.message === 'Transaction already performed') {
-	// 				toast.warning(res.data.message, {
-	// 					style: {
-	// 						background: '#1e3257',
-	// 						margin: '7px',
-	// 						borderRadius: '7px',
-	// 						color: 'white',
-	// 						border: '1px solid gray',
-	// 					},
-	// 				});
-	// 			} else {
-	// 				toast.success(res.data.message);
-
-	// 				setIsOpen(true);
-	// 			}
-	// 		})
-	// 		.catch((err) => {
-	// 			console.log(err);
-	// 			toast.dismiss();
-	// 			toast.update(
-	// 				id,
-	// 				{
-	// 					render: 'Payment Error',
-	// 					type: 'error',
-	// 					isLoading: false,
-	// 					autoClose: 5000,
-	// 				},
-	// 				{
-	// 					style: {
-	// 						background: '#1e3257',
-	// 						margin: '7px',
-	// 						borderRadius: '7px',
-	// 						color: 'white',
-	// 						border: '1px solid gray',
-	// 					},
-	// 				}
-	// 			);
-	// 		});
-	// };
-
-	const onCheckout = (data) => {
-		// console.log(total);
 		const handleClick = async () => {
 			const event_list = [];
 			cart.map((data) => {
@@ -206,11 +112,11 @@ const PaymentOptions = ({ total }) => {
 				},
 			});
 
-			// openModal();
+			openModal();
 
 			await Requests.order({
 				event_list,
-				transaction_id: data.upi_id,
+				transaction_id: upiData.upi_id,
 				amount: total,
 			})
 				.then((res) => {
@@ -238,14 +144,12 @@ const PaymentOptions = ({ total }) => {
 						});
 					} else {
 						toast.success(res.data.message);
+						dispatch(emptyCart());
 						setIsOpen(true);
-						setTimeout(() => {
-							dispatch(emptyCart());
-						}, 100);
 					}
 				})
 				.catch((err) => {
-					console.log(err);
+					// console.log(err);
 					toast.dismiss();
 					toast.update(
 						id,
@@ -267,6 +171,23 @@ const PaymentOptions = ({ total }) => {
 					);
 				});
 		};
+		handleClick();
+		closeModal();
+
+		navigate('/profile');
+		toast.success('Ticked Booked successfully!', {
+			style: {
+				background: '#1e3257',
+				margin: '7px',
+				borderRadius: '7px',
+				color: 'white',
+				border: '1px solid gray',
+			},
+		});
+	};
+
+	const onCheckout = (data) => {
+		// console.log(total);
 
 		if (onlyDigits(data.upi_id)) {
 			setupiID(data.upi_id);
@@ -311,7 +232,8 @@ const PaymentOptions = ({ total }) => {
 			});
 			return false;
 		} else {
-			handleClick();
+			setupiData(data);
+			openModal();
 		}
 	};
 
