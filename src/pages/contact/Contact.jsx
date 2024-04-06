@@ -64,7 +64,7 @@ const Contact = () => {
 				<Parallax
 					pages={3.2}
 					style={{ top: '0', left: '0' }}
-					className="animation  bg-[#080E3E]">
+					className="animation  bg-[#080E3E] [&::-webkit-scrollbar]:[width:2px]">
 					<ParallaxLayer offset={0} speed={0.25}>
 						<div className="animation_layer parallax" id="bglayer"></div>
 					</ParallaxLayer>
@@ -123,7 +123,7 @@ const Contact = () => {
 							<div className="text-2xl text-center md:text-2xl lg:text-3xl text-sky-200">
 								Admin Team
 							</div>
-							<div className="flex justify-around gap-5 m-10 cardb">
+							<div className="flex gap-5 m-10 justify-evenly cardb">
 								<Card
 									imagen={imghs}
 									name={'Harsh Khandelwal'}

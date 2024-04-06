@@ -57,14 +57,14 @@ const Login = () => {
 	};
 
 	return (
-		<div className="grid mx-auto rounded-md border-2 border-blue-950 place-items-center w-[100%] h-[100%] bg-gradient-to-t from-[#09203f] to-[#173b57] shadow-xl">
+		<div className=" grid m-auto rounded-md border-2 border-blue-950 place-items-center w-[100%] h-[100%] bg-gradient-to-t from-[#09203f] to-[#173b57] shadow-xl">
 			<div className="w-[80%] mx-auto flex flex-col items-start pt-4 m-2 justify-evenly text-slate-300 text-center">
 				<h2 className="mx-auto my-1 text-2xl">Welcome Back!</h2>
 				<p className="mx-auto mt-4 text-blue-400">Please login to continue..</p>
 			</div>
 			<form
 				onSubmit={handleSubmit(onSubmit)}
-				className="w-[340px] h-[400px] flex justify-evenly flex-col p-2 px-4">
+				className="md:w-[340px] w-[310px] h-[300px] flex justify-evenly flex-col p-2 px-4">
 				<div className="my-1">
 					<div className="flex flex-col">
 						<label

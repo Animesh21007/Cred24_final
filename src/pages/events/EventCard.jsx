@@ -165,7 +165,7 @@ const EventCard = ({ img, item }) => {
 												<button
 													type="button"
 													disabled={added}
-													className={`flex hover:border-2 items-center justify-center px-4 py-2 text-sm font-medium text-blue-900 border border-transparent rounded-md h-fit hover:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-800 focus-visible:ring-offset-2 
+													className={`flex hover:border-2 items-center justify-center md:px-4 md:py-2 px-2 py-1 text-sm font-medium text-blue-900 border border-transparent rounded-md h-fit hover:bg-black focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-800 focus-visible:ring-offset-2 
 													${
 														added
 															? 'border-2 bg-black rounded-lg cursor-default text-slate-100 shadow-sm border-1 border-green-400 font-semibold text-lg'

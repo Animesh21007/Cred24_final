@@ -309,8 +309,11 @@ const EventJson = [
 	{
 		heading: 'Quizillionaire',
 		body: 'Dive into a whirlwind of knowledge with Quizillionaire! It is a completely offline event ! Journey through eclectic questions spanning bollywood/hollywood to sports, from Shakespeare to business gurus. Led by a charismatic quiz master, embark on three rounds of mind-bending quizzes, from general knowledge to current affairs, sports, memes, movies, and entertainment.The grand finale awaits with a Kaun Banega Crorepati format round ! Flex your IQ and compete for glory !',
-		structure: `Round 1 : \n•Menti meter round Semi final \n•Buzzer round Finals 
-			\n•KBC(Kaun Banega Crorepati Round)`,
+		structure: {
+			1: `Round 1 : Menti meter round Semi final 
+			 \nSemi Final : Buzzer round
+			 \nFinal : KBC(Kaun Banega Crorepati Round)`,
+		},
 		rules: {
 			1: 'Candidate pursuing an undergraduate program at any institute is allowed to participate.',
 			2: ' Participants are encouraged to maintain a copy of their ID card.',

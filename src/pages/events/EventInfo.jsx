@@ -101,7 +101,7 @@ const EventInfo = ({ data }) => {
 							<div
 								className="flex my-2 text-wrap"
 								key={inx * Math.random(0, 1)}>
-								{id !== 111 ? (
+								{id !== 111 && id !== 108 ? (
 									<>
 										<p className="px-2 pt-1 font-semibold text-left">
 											{inx + 1}.
@@ -109,7 +109,7 @@ const EventInfo = ({ data }) => {
 										<p className={'p-1 '}>{itm}</p>
 									</>
 								) : (
-									<pre className="p-1 text-balance w-[80%]">{itm}</pre>
+									<pre className="p-1 text-balance">{itm}</pre>
 								)}
 							</div>
 						);
@@ -123,7 +123,7 @@ const EventInfo = ({ data }) => {
 							3. To View the problem statements, visit{' '}
 							<a
 								href="https://github.com/Credenz-Web-Weaver"
-								className="underline underline-blue-500 text-blue-400">
+								className="text-blue-400 underline underline-blue-500">
 								https://github.com/Credenz-Web-Weaver
 							</a>
 						</p>
@@ -131,7 +131,7 @@ const EventInfo = ({ data }) => {
 							4. Submit your ideas here :
 							<a
 								href="https://forms.gle/khmDuuHNbb2ioJ8g9"
-								className="underline underline-blue-500 text-blue-400">
+								className="text-blue-400 underline underline-blue-500">
 								https://forms.gle/khmDuuHNbb2ioJ8g9
 							</a>
 						</p>

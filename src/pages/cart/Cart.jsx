@@ -37,7 +37,7 @@ const Cart = () => {
 				const res = await Requests.profile();
 				setProfileOrder((prev) => (prev = res.data.orders));
 			} catch (err) {
-				toast.error('There was an error !');
+				// toast.error('There was an error !');
 			}
 		};
 		getData();

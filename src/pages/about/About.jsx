@@ -75,7 +75,7 @@ const About = () => {
 			<Parallax
 				pages={2.2}
 				style={{ top: '0', left: '0' }}
-				className="animation bg-[#0f1b34]">
+				className="animation bg-[#0f1b34] [&::-webkit-scrollbar]:[width:2px]">
 				<ParallaxLayer offset={0} speed={0.75}>
 					<div class="animation_layer parallax" id="bgblue"></div>
 				</ParallaxLayer>

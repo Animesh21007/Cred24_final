@@ -14,7 +14,7 @@ import Location from '../../images/Location.png';
 import { toast } from 'react-toastify';
 import ProfileContext from '../../utils/profileContext/ProfileContext';
 import Tickets from './Tickets';
-import profilePhoto from '../../images/Profile_logo.jpg';
+import profilePhoto from '../../images/Scuba_warrior.webp';
 import './profile.css';
 
 const Profile = () => {
@@ -89,7 +89,7 @@ const Profile = () => {
 		<div className=" md:w-[100%] w-[fit-content] bg-[#0f1b3] select-none rounded-xl">
 			<div className="md:w-[85%] w-[100%] h-[100%] m-auto bg-[#0f1b34] text-white rounded-xl">
 				<ProfileContext.Provider value={profileInfo}>
-					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 border-4 border-purple-900">
+					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 md:border-4 border-purple-900">
 						<div className="flex flex-col flex-1 border-b-2 md:pr-2 border-violet-600">
 							<div className="mx-auto md:w-[100%] w-[90%] border-4 flex flex-col items-center justify-center text-center md:flex-row md:justify-evenly h-[50%] border-teal-800">
 								<div className="p-4 mx-0 md:p-1">

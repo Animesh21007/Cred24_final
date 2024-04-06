@@ -44,13 +44,15 @@ const Sponsors = () => {
 	];
 	return (
 		<div className="">
-			<div className="sponsors -z-10">
+			<div className="sponsors -z-10 ">
 				<Parallax
 					pages={pages}
 					style={{ top: '0', left: '0' }}
-					className="animation3  bg-[#032648]">
+					className="animation3  bg-[#032648] h-[fit-content] [&::-webkit-scrollbar]:[width:2px]">
 					<ParallaxLayer offset={0} speed={0.25}>
-						<div className="animation_layer parallax3" id="bgspons"></div>
+						<div
+							className="animation_layer parallax3 h-[1400px]"
+							id="bgspons"></div>
 					</ParallaxLayer>
 					{/* <ParallaxLayer offset={0} speed={0.50}>
           <div className="animation_layer parallax3" id="bubbles"></div>
@@ -102,7 +104,7 @@ const Sponsors = () => {
 						<div className="animation_layer parallax3" id="layers12"></div>
 					</ParallaxLayer>
 					<ParallaxLayer offset={0.95} speed={0.25}>
-						<div className="p-10 m-10 text-sm md:text-5xl font-extrabold text-center border border-blue-300 text-sky-300 rounded-2xl">
+						<div className="p-10 m-10 text-sm font-extrabold text-center border border-blue-300 md:text-5xl text-sky-300 rounded-2xl">
 							<Typewriter
 								options={{
 									loop: true,
@@ -120,10 +122,10 @@ const Sponsors = () => {
 							/>
 						</div>
 						<div className="flex-col m-10 ">
-							<div className="text-xl md:text-2xl lg:text-3xl font-extrabold text-center text-white">
+							<div className="text-xl font-extrabold text-center text-white md:text-2xl lg:text-3xl">
 								Finance Team
 							</div>
-							<div className=" gap-5 mt-10 items-center flex justify-evenly cardb">
+							<div className="flex items-center gap-5 mt-10 justify-evenly cardb">
 								<Card
 									className=""
 									name={'Prem Deshmukh'}
@@ -145,7 +147,7 @@ const Sponsors = () => {
 
 									imagen={imgpb}></Card>
 							</div>
-							{/* <div className='flex md:hidden oldd mr-20 '>
+							{/* <div className='flex mr-20 md:hidden oldd '>
 						   <Carousel cards={cards} height="500px" width="100%"/>
 	                   </div> */}
 						</div>

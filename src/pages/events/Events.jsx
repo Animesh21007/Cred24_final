@@ -42,22 +42,22 @@ const Events = () => {
 	return (
 		<>
 			<div className="Events">
-				<div class="c h-[-webkit-fill-available]">
-					<span class="bub a "></span>
+				<div className="c h-[-webkit-fill-available]">
+					<span className="bub a "></span>
 
-					<span class="bub c "></span>
-					<span class="bub d"></span>
-					<span class="bub e"></span>
-					<span class="bub f"></span>
-					<span class="bub g"></span>
-					<span class="bub h"></span>
-					<span class="bub i"></span>
+					<span className="bub c "></span>
+					<span className="bub d"></span>
+					<span className="bub e"></span>
+					<span className="bub f"></span>
+					<span className="bub g"></span>
+					<span className="bub h"></span>
+					<span className="bub i"></span>
 
-					<span class="bub k"></span>
+					<span className="bub k"></span>
 				</div>
 				<div className="text-center bg-transparent text-blue-50">
 					<h1 className="text-4xl text-cyan-400">Events</h1>
-					<div className="lex flex-wrap grid-cols-2 grid lg:grid-cols-6 lg:grid-rows-auto justify-center h-auto p-2 md:mx-auto md:my-4 my-0 border-0 sm:gap-4 md:w-[100%] w-[100%]">
+					<div className="lex flex-wrap grid-cols-2 grid lg:grid-cols-6 lg:grid-rows-auto justify-center h-auto p-2 md:mx-auto md:mb-4 my-0 border-0 sm:gap-4 md:w-[100%] w-[100%]">
 						{Event.map((item, index) => (
 							<EventCard
 								key={item.id}

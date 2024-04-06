@@ -2,6 +2,10 @@
     background-image: url('');
 }
 
+a{
+    margin: auto!important;
+}
+
 @media (max-width : 500px){
     .nav{
         height: 100%;
