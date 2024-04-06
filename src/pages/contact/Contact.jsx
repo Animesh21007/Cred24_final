@@ -150,7 +150,7 @@ const Contact = () => {
 									posi={'Joint Secretary'}
 								/>
 							</div>
-							<div className="flex justify-around gap-5 m-10 cardb">
+							<div className="flex gap-5 m-10 justify-evenly cardb">
 								<Card
 									imagen={imgkrn}
 									name={'Karan Mundhada'}

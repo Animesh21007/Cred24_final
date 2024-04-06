@@ -3,6 +3,7 @@ import { Label } from './label';
 import { Input } from './input';
 import { cn } from '../../utils/cn';
 import { useForm } from 'react-hook-form';
+import { toast } from 'react-toastify';
 import {
 	IconBrandGithub,
 	IconBrandGoogle,
@@ -11,8 +12,9 @@ import {
 
 function SignupForm() {
 	const { register, handleSubmit } = useForm();
-	const handleFeedback = (e) => {
-		e.preventDefault();
+	const handleFeedback = (data) => {
+		// console.log(data);
+		// e.preventDefault();
 		toast.success('Form submitted successfully', {
 			style: {
 				background: '#1e3257',
@@ -25,11 +27,11 @@ function SignupForm() {
 		// console.log('Form submitted');
 	};
 	return (
-		<div className=" w-full mx-auto rounded-3xl p-4 md:p-8 shadow-input bg-slate-900 border border-cyan-600">
-			<h2 className="font-bold text-xl text-neutral-200">Feedback Form</h2>
+		<div className="w-full p-4 mx-auto border rounded-3xl md:p-8 shadow-input bg-slate-900 border-cyan-600">
+			<h2 className="text-xl font-bold text-neutral-200">Feedback Form</h2>
 
 			<form className="my-8" onSubmit={handleSubmit(handleFeedback)}>
-				<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
+				<div className="flex flex-col mb-4 space-y-2 md:flex-row md:space-y-0 md:space-x-2">
 					<LabelInputContainer>
 						<Label htmlFor="firstname">First name</Label>
 						<Input
@@ -88,8 +90,8 @@ function SignupForm() {
 const BottomGradient = () => {
 	return (
 		<>
-			<span className="group-hover/btn:opacity-100 block transition duration-500 opacity-0 absolute h-px w-full -bottom-px inset-x-0 bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
-			<span className="group-hover/btn:opacity-100 blur-sm block transition duration-500 opacity-0 absolute h-px w-1/2 mx-auto -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
+			<span className="absolute inset-x-0 block w-full h-px transition duration-500 opacity-0 group-hover/btn:opacity-100 -bottom-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent" />
+			<span className="absolute block w-1/2 h-px mx-auto transition duration-500 opacity-0 group-hover/btn:opacity-100 blur-sm -bottom-px inset-x-10 bg-gradient-to-r from-transparent via-indigo-500 to-transparent" />
 		</>
 	);
 };
