@@ -8,7 +8,7 @@ import PaymentOptions from './PaymentOptions';
 
 const PassPayment = () => {
 	const totalprice = 250;
-	const link = `upi://pay?pa=pictscholarship@jsb&pn=pictscholarship&am=${totalprice}&tn=Credenz IEEE&cu=INR`;
+	const link = `upi://pay?pa=scrtspuneinstofcompu.62804004@hdfcbank&pn=PICT_IEEE_PISB&am=${totalprice}&mc=0000&tn=Credenz24 IEEE&cu=INR`;
 	const [qrCodeDataUrl, setQrCodeDataUrl] = useState('');
 	const [paymentMode, setPaymentMode] = useState(1);
 
