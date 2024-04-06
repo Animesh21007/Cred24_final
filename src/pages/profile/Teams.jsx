@@ -72,12 +72,12 @@ const MyTeam = () => {
 								<div className="w-[100%] grid grid-cols-2 grid-row-3 h-[100%] items-center">
 									<h2 className="px-1 text-blue-400">Name :</h2>
 									<p>{team.team_name}</p>
-									<p className="text-center text-blue-400 border-1 border-blue-600">
+									<p className="text-center text-blue-400 border-blue-600 border-1">
 										{'Team \nID :'}
 									</p>
 									<div className="flex flex-col items-center justify-center px-1">
 										<button
-											className="px-2 border-b-2  border-blue-400 hover:text-slate-500"
+											className="px-2 border-b-2 border-blue-400 hover:text-slate-500"
 											onClick={() => copyToClipboard(team.team_id)}>
 											{team.team_id}
 										</button>
@@ -88,7 +88,7 @@ const MyTeam = () => {
 									<div className="flex flex-col items-center">
 										<button
 											onClick={() => copyToClipboard(team.team_password)}
-											className="px-3 border-b-2  border-blue-400 hover:text-slate-500">
+											className="px-3 border-b-2 border-blue-400 hover:text-slate-500">
 											{team.team_password}
 										</button>
 									</div>
@@ -198,19 +198,16 @@ const CreateTeam = () => {
 	const eventsList = [
 		{ title: 'Clash', id: 101 },
 		{ title: 'Reverse Coding', id: 102 },
-		// { title: 'NTH', id: 103 },
-		// { title: 'Wallstreet', id: 104 },
-		{ title: 'B-Plan', id: 105 },
+		// { title: 'B-Plan', id: 105 },
 		{ title: 'Enigma', id: 106 },
-		// { title: 'Datawiz', id: 107 },
-		{ title: 'Quiz', id: 108 },
+		{ title: 'Quizillionaire', id: 108 },
 		{ title: 'Cretronix', id: 109 },
 		{ title: 'Web Weaver', id: 110 },
 		{ title: 'Roboliga', id: 111 },
 	];
 
 	const onCreateTeam = (data) => {
-		console.log(data);
+		// console.log(data);
 		if (totalsum === 0) {
 			toast.warning('Buy an event first!', {
 				style: {
@@ -236,7 +233,7 @@ const CreateTeam = () => {
 			} else {
 				Requests.createTeam(data)
 					.then((res) => {
-						console.log(res);
+						// console.log(res);
 						if (
 							res.data.message === 'No order exists for this user and event.'
 						) {
@@ -283,7 +280,9 @@ const CreateTeam = () => {
 							});
 						}
 					})
-					.catch((err) => console.log(err));
+					.catch((err) =>
+						toast.error('There was an error while creating team!')
+					);
 			}
 		}
 	};

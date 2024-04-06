@@ -66,9 +66,9 @@ const Register = () => {
 				})
 				.catch((err) => {
 					toast.dismiss();
-					console.log(err);
+					// console.log(err);
 					const msg = err.response.data;
-					console.log(msg);
+					// console.log(msg);
 					if (msg?.message?.username) {
 						toast.warning(msg.message.username[0], {
 							style: {

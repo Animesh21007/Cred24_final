@@ -21,7 +21,7 @@ const ForgotPass = () => {
 			});
 			Requests.forgetPassword(data)
 				.then((res) => {
-					console.log(res);
+					// console.log(res);
 					toast.dismiss();
 					toast.success('Email sent succesfully', {
 						style: {
@@ -35,7 +35,7 @@ const ForgotPass = () => {
 					// navigate('/resetpass');
 				})
 				.catch((err) => {
-					console.log(err);
+					// console.log(err);
 					toast.dismiss();
 					toast.error('There was a error!', {
 						style: {

@@ -64,7 +64,7 @@ const AdminUser = ({ props }) => {
 		setCart(temp);
 		setIsQr(true);
 		setUpiId('');
-		console.log(temp);
+		// console.log(temp);
 	};
 
 	const handlePassCheckboxChange = (e) => {

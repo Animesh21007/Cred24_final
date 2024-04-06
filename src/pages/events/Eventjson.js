@@ -459,22 +459,22 @@ const EventJson = [
 			6: 'Teams can register at the desk put up in various colleges in and around Pune.',
 			7: 'Teams can also register at the registration desk on the day of the event, at least an hour prior to the event.',
 			8: 'All the participants should bring valid I-cards while coming for the contest. No one without I-card will be allowed for the contest and the team will be disqualified. The participants should carry the same at all times.',
-			'Robot Limitations': [
-				'1. Maximum robot dimensions: 30cm x 30 cm x 30 cm.',
-				'2. Maximum weight 3.5 kg.',
-				'3. Power specifications: Max Voltage: 12V (Normal Operation). Participating teams have to bring their own batteries sufficiently enough to play all day.',
-				'4. The robot cannot split into two independent parts.',
-				'5. Robot should be manually controlled(wireless connection) or automatic.',
-				'6. No weapons (blades, spikes) of any kind are to be attached onto the robot.',
-				'7. The participants are allowed to use any number of actuators.',
-				"8. One robot can't be shared between two teams for any reason.",
-			],
-			'Judging Criteria': [
-				'1. A yellow card will be flashed on each hand touch after the first one. A maximum of three such cards will add up to a red card i.e. Disqualification.',
-				'2. Organizers have the authority to disqualify any team for misconduct or disorderly behaviour. This team would not be allowed to re-register.',
-				'3. Organizers reserve the rights to make changes to the field design at any time without prior notification. Participants are requested to refer to the website regularly for any such changes.',
-				"4. Organizers' decisions will be final and binding to all.",
-			],
+			9: `\n   Robot Limitations: 
+				\n1. Maximum robot dimensions: 30cm x 30 cm x 30 cm.
+				\n2. Maximum weight 3.5 kg.
+				\n3. Power specifications: Max Voltage: 12V (Normal Operation). Participating teams have to bring their own batteries sufficiently enough to play all day.
+				\n4. The robot cannot split into two independent parts.
+				\n5. Robot should be manually controlled(wireless connection) or automatic.
+				\n6. No weapons (blades, spikes) of any kind are to be attached onto the robot.
+				\n7. The participants are allowed to use any number of actuators.
+				\n8. One robot can't be shared between two teams for any reason.
+			`,
+			10: `\n Judging Criteria: 
+				\n1. A yellow card will be flashed on each hand touch after the first one. A maximum of three such cards will add up to a red card i.e. Disqualification.
+				\n2. Organizers have the authority to disqualify any team for misconduct or disorderly behaviour. This team would not be allowed to re-register.
+				\n3. Organizers reserve the rights to make changes to the field design at any time without prior notification. Participants are requested to refer to the website regularly for any such changes.
+				\n4. Organizers' decisions will be final and binding to all.
+			`,
 		},
 		amount: 200,
 		count: 1,
@@ -497,8 +497,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'All matches: 12th April 2024, 11:00 AM to 6:00 PM',
-			'Semi-finals and Finals: 13th April 2024, 3:00 PM to 6:00 PM',
+			'All matches: 12th April 2024, 11:00 AM to 7:00 PM',
+			'Semi-finals and Finals: 13th April 2024, 11:00 PM to 3:00 PM',
 		],
 	},
 

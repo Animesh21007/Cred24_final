@@ -77,8 +77,14 @@ const EventInfo = ({ data }) => {
 				{Object.values(rules).map((itm, index) => {
 					return (
 						<div className="flex flex-row m-2" key={index * 0.1}>
-							<p className="p-1 mx-1">{index + 1}.</p>
-							<p className="p-1">{itm}</p>
+							{id !== 111 ? (
+								<p className="px-2 pt-1 font-semibold text-justify">
+									{index + 1}.
+								</p>
+							) : (
+								''
+							)}
+							<pre className="p-1">{itm}</pre>
 						</div>
 					);
 				})}
@@ -94,13 +100,15 @@ const EventInfo = ({ data }) => {
 						return (
 							<div className="flex my-2" key={inx * Math.random(0, 1)}>
 								{id !== 111 ? (
-									<p className="px-2 pt-1 font-semibold text-justify">
-										{inx + 1}.
-									</p>
+									<>
+										<p className="px-2 pt-1 font-semibold text-justify">
+											{inx + 1}.
+										</p>
+										<pre className={'p-1 '}>{itm}</pre>
+									</>
 								) : (
-									''
+									<p className="p-1">{itm}</p>
 								)}
-								<p className={'p-1 '}>{itm}</p>
 							</div>
 						);
 					})
@@ -152,7 +160,7 @@ const EventInfo = ({ data }) => {
 								)}>
 								<div
 									key={Math.random() * 1.5}
-									className="flow m-auto overflow-y-scroll h-[300px] [&::-webkit-scrollbar]:[width:2px]
+									className="flow m-auto overflow-scroll h-[300px] [&::-webkit-scrollbar]:[width:2px] [&::-webkit-scrollbar]:[height:2px]
 									[&::-webkit-scrollbar-thumb]:bg-blue-300 md:text-lg text-sm text-blue-100 mb-2 md:px-4 sm:px-1
 									 post rounded-none">
 									{posts}

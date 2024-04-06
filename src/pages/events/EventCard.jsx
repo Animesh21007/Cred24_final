@@ -109,8 +109,8 @@ const EventCard = ({ img, item }) => {
 						<div className="fixed inset-0 bg-black/25" />
 					</Transition.Child>
 
-					<div className="fixed inset-0 overflow-y-aut">
-						<div className="flex items-center justify-center min-h-full md:p-4 py-2 px-0 text-center md:bg-inherit bg-slate-800">
+					<div className="fixed inset-0 overflow-y-scroll [&::-webkit-scrollbar]:[width:2px]">
+						<div className="flex items-center justify-center min-h-full px-0 py-2 text-center md:p-4 md:bg-inherit bg-slate-800">
 							<Transition.Child
 								as={Fragment}
 								enter="ease-out duration-300"

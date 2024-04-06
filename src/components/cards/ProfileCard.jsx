@@ -17,7 +17,7 @@ function Card({ imagen, name, posi, ph, mailid, lknid }) {
 	});
 	return (
 		<animated.div
-			className=" cardp flex flex-col border-2 border-blue-300 w-60 md:w-[40%] lg:w-[18%] bg-slate-900  p-[4] md:p-6 lg:p-1 rounded-2xl justify-center h-[fit-content]  md:h-[60vh] lg:h-[60vh]"
+			className=" cardp flex flex-col border-2 border-blue-300 w-60 md:w-[40%] lg:w-[18%] bg-slate-900  p-[4] md:p-6 lg:p-1 rounded-2xl justify-center h-[fit-content]  md:h-[fit-content] lg:h-60vh]"
 			style={props3}
 			onMouseEnter={() => setShown(true)}
 			onMouseLeave={() => setShown(false)}>
@@ -47,8 +47,11 @@ function Card({ imagen, name, posi, ph, mailid, lknid }) {
 				)}
 			</div>
 
-			<div className="flex justify-around mb-10 md:m-[3] lg:mt-2  gap-4 cursor-pointer">
-				<a href={`mailto: mailid`} target="_blank" rel="noopener noreferrer">
+			<div className="flex justify-around  md:m-[3] lg:mt-2  gap-4 cursor-pointer">
+				<a
+					href={`https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=${mailid}`}
+					target="_blank"
+					rel="noopener noreferrer">
 					<FontAwesomeIcon
 						icon={faEnvelope}
 						style={{ color: 'skyblue', fontSize: '20px' }}
@@ -60,12 +63,12 @@ function Card({ imagen, name, posi, ph, mailid, lknid }) {
 						style={{ color: 'skyblue', fontSize: '20px' }}
 					/>
 				</a>
-				<a href={lknid} target="_blank" rel="noopener noreferrer">
+				{/* <a href={lknid} target="_blank" rel="noopener noreferrer">
 					<FontAwesomeIcon
 						icon={faPhone}
 						style={{ color: 'skyblue', fontSize: '20px' }}
 					/>
-				</a>
+				</a> */}
 			</div>
 		</animated.div>
 	);

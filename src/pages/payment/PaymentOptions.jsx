@@ -189,6 +189,7 @@ const PaymentOptions = ({ total }) => {
 	// };
 
 	const onCheckout = (data) => {
+		// console.log(total);
 		const handleClick = async () => {
 			const event_list = [];
 			cart.map((data) => {
@@ -213,7 +214,7 @@ const PaymentOptions = ({ total }) => {
 				amount: total,
 			})
 				.then((res) => {
-					console.log(res);
+					// console.log(res);
 					toast.dismiss();
 					if (res.data.message === 'order already placed') {
 						toast.warning('Order already placed!', {
@@ -298,7 +299,7 @@ const PaymentOptions = ({ total }) => {
 			});
 			return false;
 		} else if (upiId.length < 10) {
-			console.log(upiId.length);
+			// console.log(upiId.length);
 			toast.error('Enter Valid Id', {
 				style: {
 					background: '#1e3257',
@@ -310,32 +311,8 @@ const PaymentOptions = ({ total }) => {
 			});
 			return false;
 		} else {
-			// toast.info(`Please Ensure ${payList[selected.cpus]} is correct`, {
-			// 	style: {
-			// 		background: '#1e3257',
-			// 		margin: '7px',
-			// 		borderRadius: '7px',
-			// 		color: 'white',
-			// 		border: '1px solid gray',
-			// 	},
-			// });
-			// return;
 			handleClick();
 		}
-		//  else {
-		// 	toast.error('Invalid UPI ID', {
-		// 		style: {
-		// 			background: '#1e3257',
-		// 			margin: '7px',
-		// 			borderRadius: '7px',
-		// 			color: 'white',
-		// 			border: '1px solid gray',
-		// 		},
-		// 	});
-		// 	return;
-		// }
-
-		// data = { ...data, upiId: upi.val };
 	};
 
 	return (

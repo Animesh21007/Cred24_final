@@ -29,7 +29,7 @@ const Login = () => {
 				});
 				dispatch(setLogin());
 				navigate('/events');
-				console.log(res);
+				// console.log(res);
 			})
 			.catch((err) => {
 				if (err.response) {

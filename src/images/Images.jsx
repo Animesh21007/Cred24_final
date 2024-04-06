@@ -7,7 +7,7 @@ import RC from './logos/rc.png';
 import Roboliga from './logos/roboliga.png';
 import WallStreet from './logos/wallstreet.png';
 import Xodia from './logos/xodia.png';
-import Quiz from './logos/quiz.png';
+import Quizillionaire from './logos/quiz.png';
 import Webweaver from './logos/webweaver.png';
 import Enigma from './logos/enigma.png';
 // import Enigma from './logos/'
@@ -19,7 +19,7 @@ const Logo = {
 	105: Bplan,
 	106: Enigma,
 	107: Datawiz,
-	108: Quiz,
+	108: Quizillionaire,
 	109: Cretronix,
 	110: Webweaver,
 	111: Roboliga,

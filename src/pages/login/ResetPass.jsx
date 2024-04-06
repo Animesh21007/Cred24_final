@@ -10,7 +10,7 @@ const ResetPass = () => {
 	const { register, handleSubmit } = useForm();
 	const onReset = (data) => {
 		toast.loading('Please wait ...');
-		console.log({ token, uid, ...data });
+		// console.log({ token, uid, ...data });
 		if (data.new_password !== data.confirm_password) {
 			toast.dismiss();
 			toast.warning('Passwords do not match!', {
@@ -27,14 +27,14 @@ const ResetPass = () => {
 			delete data.confirm_password;
 			Requests.resetPassword({ token, uid, ...data })
 				.then((res) => {
-					console.log(res);
+					// console.log(res);
 					if (res.data) {
 						toast.success(res.data.message);
 					}
 					navigate('/login');
 				})
 				.catch((err) => {
-					console.log(err);
+					// console.log(err);
 					toast.error(err.response.data.message);
 				});
 		}

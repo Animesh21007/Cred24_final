@@ -37,7 +37,7 @@ const Cart = () => {
 				const res = await Requests.profile();
 				setProfileOrder((prev) => (prev = res.data.orders));
 			} catch (err) {
-				console.log(err);
+				toast.error('There was an error !');
 			}
 		};
 		getData();
@@ -133,7 +133,7 @@ const Cart = () => {
 			<div className="pt-4 md:w-[70%] md:h-[100%] sm:w-[100%] h-[fit-content] md:m-6 md:mx-auto border-gray-800 rounded-md flex flex-row justify-center items-center">
 				{cart.length === 0 ? (
 					<div className="m-auto md:w-75 sm:w-[100%] sm:my-auto h-[300px] flex justify-center items-center shadow-2xl border-2 border-inherit rounded-md md:bg-gradient-to-b from-[#002347] to-[#0f1b34] my-auto">
-						<p className="text-3xl text-sky-500 text-center">
+						<p className="text-3xl text-center text-sky-500">
 							The Cart is Empty!
 						</p>
 					</div>

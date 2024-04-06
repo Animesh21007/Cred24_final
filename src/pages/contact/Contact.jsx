@@ -7,7 +7,7 @@ import './contactus.css';
 import { SignupForm } from '../../components/forms/Form';
 import { BackgroundGradient } from '../../components/ui/background-gradient';
 import imgsh from '../../assets/admin-photos/Shruti_Shinde2.jpg';
-import imgpp from '../../assets/admin-photos/vcnew3.jpg';
+import imgpp from '../../assets/admin-photos/PrassnaPande.jpg';
 import imghs from '../../assets/admin-photos/Harshk.jpg';
 import imgkrn from '../../assets/admin-photos/karanmun.jpg';
 import imgjy from '../../assets/admin-photos/jeeya.jpg';
@@ -84,7 +84,7 @@ const Contact = () => {
 						<div className="animation_layer parallax" id="layer3"></div>
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={-0.3}>
-						<div className="flex items-start justify-center font-extrabold text-center text-sky-200 align-middle animation_layer parallax mt-20 md:mt-1 text-5xl sm:text-7xl md:text-7xl lg:text-9xl">
+						<div className="flex items-start justify-center mt-20 text-5xl font-extrabold text-center align-middle text-sky-200 animation_layer parallax md:mt-1 sm:text-7xl md:text-7xl lg:text-9xl">
 							<p className="mt-[20%]">Contact Us</p>
 						</div>
 					</ParallaxLayer>
@@ -119,8 +119,8 @@ const Contact = () => {
 						className="animation_layer parallax"
 						offset={1}
 						speed={0.25}>
-						<div className="neww flex-col m-5 ">
-							<div className="text-center text-2xl  md:text-2xl lg:text-3xl text-sky-200">
+						<div className="flex-col m-5 neww ">
+							<div className="text-2xl text-center md:text-2xl lg:text-3xl text-sky-200">
 								Admin Team
 							</div>
 							<div className="flex justify-around gap-5 m-10 cardb">
@@ -177,7 +177,7 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<div className="oldd mr-20 ">
+						<div className="mr-20 oldd ">
 							<Carousel cards={cards} height="500px" width="100%" />
 						</div>
 						<iframe
@@ -194,14 +194,14 @@ const Contact = () => {
 						className="animation_layer parallax"
 						speed={0.3}>
 						<div className="flex flex-col mb-80 md:mb-60 lg:mb-[38] p-2 md:flex-row">
-							<div className="  w-full p-6 md:p-5 mb-10 sm:ml-20 md:mx-5 md:mb-20 md:w-1/2">
+							<div className="w-full p-6 mb-10 md:p-5 sm:ml-20 md:mx-5 md:mb-20 md:w-1/2">
 								<BackgroundGradient>
 									<SignupForm></SignupForm>
 								</BackgroundGradient>
 							</div>
 
 							<iframe
-								className="hidden md:block rounded-3xl p-4  sm:mb-20  md:w-1/2 m-4"
+								className="hidden p-4 m-4 md:block rounded-3xl sm:mb-20 md:w-1/2"
 								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15138.304775421915!2d73.84210028503307!3d18.457541900113636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eac85230ba47%3A0x871eddd0a8a0a108!2sSCTR&#39;S%20Pune%20Institute%20of%20Computer%20Technology!5e0!3m2!1sen!2sin!4v1678165753590!5m2!1sen!2sin"
 								style={{ border: 0 }}
 								allowFullScreen=""

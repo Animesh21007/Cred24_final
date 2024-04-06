@@ -31,7 +31,7 @@ const cartSlice = createSlice({
 			const removedItem = state.cart.find((item) => item.id === action.payload);
 			state.totalSum -= removedItem.cost;
 			const index = state.cart.findIndex((item) => item.id === removedItem.id);
-			console.log(state.cart.splice(index, 1));
+			// console.log(state.cart.splice(index, 1));
 		},
 		emptyCart: (state) => {
 			state.cart = [];
