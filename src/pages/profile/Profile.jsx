@@ -32,6 +32,7 @@ const Profile = () => {
 			try {
 				const res = await Requests.profile();
 				setProfileInfo(res.data);
+				console.log(res.data);
 			} catch (err) {
 				if (err.response && err.response.statusText === 'Unauthorized') {
 					navigate('/login');

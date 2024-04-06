@@ -26,9 +26,8 @@ const Cart = () => {
 				dispatch(addtoCart(item));
 			});
 		}
-	}, [dispatch]);
+	}, []);
 	const total = useSelector((state) => state.cart.totalSum);
-
 	const [profileOrder, setProfileOrder] = useState(null);
 
 	useEffect(() => {
@@ -130,7 +129,7 @@ const Cart = () => {
 
 	return (
 		<Suspense fallback={Loader}>
-			<div className="pt-4 md:w-[70%] md:h-[100%] sm:w-[100%] h-[fit-content] md:m-6 md:mx-auto border-gray-800 rounded-md flex flex-row justify-center items-center">
+			<div className="pt-4 md:w-[70%] md:min-h-[60%] sm:w-[100%] h-[fit-content] md:m-6 md:mx-auto border-gray-800 rounded-md flex flex-row justify-center items-center">
 				{cart.length === 0 ? (
 					<div className="m-auto md:w-75 sm:w-[100%] sm:my-auto h-[300px] flex justify-center items-center shadow-2xl border-2 border-inherit rounded-md md:bg-gradient-to-b from-[#002347] to-[#0f1b34] my-auto">
 						<p className="text-3xl text-center text-sky-500">
@@ -139,7 +138,7 @@ const Cart = () => {
 					</div>
 				) : (
 					<div className="flex flex-col justify-around md:flex-row w-[100%] shadow-xl bg-[#002347] h-[100%] md:px-1">
-						<div className="cardbox md:w-[66%] py-auto my-2 md:border-r-2 md:border-dashed border-0 border-gray-700 h-auto">
+						<div className="cardbox md:w-[66%] flex flex-col justify-evenly py-auto my-2 md:border-r-2 md:border-dashed border-0 border-gray-700 h-auto">
 							<p className="px-6 pb-4 m-2 mx-8 text-2xl text-center border-b-4 text-slate-100 border-cyan-800">
 								Shopping Cart
 							</p>
@@ -157,7 +156,7 @@ const Cart = () => {
 													height="70px"
 													className=""
 												/>
-												<p className="text-lg text-right text-lime-50 w-[40%]">
+												<p className="px-2 text-lg text-right text-lime-50 font-[Poppins] md:font-[AzonixRegular]">
 													{itm.name}
 												</p>
 											</div>

@@ -86,6 +86,11 @@ const Payment = () => {
 						</Link>
 						.
 					</p>
+					<Link
+						to="/cart"
+						className="self-end px-2 mx-2 text-xl border-b-2 font-[Poppins] border-cyan-600 hover:text-blue-200 text-slate-500">
+						Back to cart
+					</Link>
 				</div>
 				<div>
 					<Link

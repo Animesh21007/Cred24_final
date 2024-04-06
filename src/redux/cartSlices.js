@@ -20,8 +20,9 @@ const cartSlice = createSlice({
 						cost: 0,
 					});
 				}
-				state.totalSum += 250;
 			});
+			// state.totalSum += 250;
+			console.log(state.totalSum);
 		},
 		addtoCart: (state, action) => {
 			state.cart.push(action.payload);
@@ -47,6 +48,7 @@ const cartSlice = createSlice({
 		},
 		totalsome: (state, action) => {
 			state.totalSum += action.payload;
+			console.log(state.totalSum + ' hi');
 		},
 	},
 });

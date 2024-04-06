@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import QRCode from 'qrcode';
 import { useSelector } from 'react-redux';
-import PaymentOptions from './PaymentOptions';
+import PaymentOptionsPass from './PaymenOptionsPass';
 
 const PassPayment = () => {
 	const totalprice = 250;
@@ -52,7 +52,7 @@ const PassPayment = () => {
 				</div>
 
 				<div className="flex-[0.4] ">
-					<PaymentOptions total={totalprice} />
+					<PaymentOptionsPass total={totalprice} />
 				</div>
 			</div>
 			<div className="border-0 md:border-l-2 border-slate-600 border-dashed md:pl-4 flex-[1.5] flex flex-col justify-evenly mb-3 md:mb-0">
@@ -92,6 +92,11 @@ const PassPayment = () => {
 						className="self-end px-2 mx-2 text-xl border-b-2 font-[Poppins] border-cyan-600 hover:text-blue-200 text-slate-500">
 						Back to events
 					</Link>
+					{/* <Link
+						to="/cart"
+						className="self-end px-2 mx-2 text-xl border-b-2 font-[Poppins] border-cyan-600 hover:text-blue-200 text-slate-500">
+						Back to cart
+					</Link> */}
 				</div>
 			</div>
 		</div>
