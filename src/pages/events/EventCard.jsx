@@ -7,6 +7,8 @@ import { addtoCart } from '../../redux/cartSlices';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Events.css';
+import './EventInfo.css';
+
 import { CardBody, CardContainer } from './../../components/ui/3d-card';
 
 const EventCard = ({ img, item }) => {
@@ -119,7 +121,7 @@ const EventCard = ({ img, item }) => {
 								leave="ease-in duration-200"
 								leaveFrom="opacity-100 scale-100"
 								leaveTo="opacity-0 scale-95">
-								<Dialog.Panel className="bg-[#04121c] [&::-webkit-scrollbar]:[width:2px]  shadow-lg w-full max-w-4xl md:max-h-[550px] sm:h-[560px] overflow-y-scroll p-2 md:p-6 md:overflow-hidden text-left align-middle transition-all transform border-t-2 border-b-2 border-teal-600 ">
+								<Dialog.Panel className="bg-[#04121c] [&::-webkit-scrollbar]:[width:2px]  shadow-lg w-full max-w-4xl md:max-h-[550px] sm:h-[560px] overflow-y-scroll p-2 md:p-6 md:overflow-hidden text-left align-middle transition-all transform border-t-2 border-b-2 border-teal-600 infobox">
 									<Dialog.Title
 										as="h3"
 										className="text-lg font-medium leading-6 text-gray-900">

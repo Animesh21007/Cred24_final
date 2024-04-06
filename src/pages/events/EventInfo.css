@@ -1,0 +1,7 @@
+@media (max-height:550px) {
+    .infobox{
+        overflow: scroll!important;
+       
+        max-height: 400px!important;
+    }
+}
