@@ -84,7 +84,7 @@ const EventInfo = ({ data }) => {
 							) : (
 								''
 							)}
-							<pre className="p-1">{itm}</pre>
+							<pre className="p-1 font-[Poppins]">{itm}</pre>
 						</div>
 					);
 				})}
@@ -109,7 +109,7 @@ const EventInfo = ({ data }) => {
 										<p className={'p-1 '}>{itm}</p>
 									</>
 								) : (
-									<pre className="p-1 text-balance">{itm}</pre>
+									<pre className="p-1 text-balance font-[Poppins]">{itm}</pre>
 								)}
 							</div>
 						);

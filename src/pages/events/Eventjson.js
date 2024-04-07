@@ -133,8 +133,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Start Time: 13th April 21:00 IST',
-			'End Time: 14th April 21:00 IST',
+			'Start Time: 13th April 9:00 PM',
+			'End Time: 14th April 9:00 PM',
 		],
 	},
 	{
@@ -260,7 +260,6 @@ const EventJson = [
 		],
 		datetime: [
 			'Round 1 (Slot 1): 12th April 2024, 4:30 PM to 06:00 PM',
-			// 'Round 1 (Slot 2): 12th April 2024, 05:00 PM to 05:30 PM',
 			'Round 2: 13th April 2024, 05:00 PM to 07:00 PM',
 		],
 	},
@@ -352,8 +351,8 @@ const EventJson = [
 		structure: {
 			1: 'There are 2 groups- Senior and junior',
 			2: 'FE & SE - junior and TE & BE - senior',
-			3: '\nRound 1: It will consist of Multiple Choice Questions (MCQs) based on theoretical and practical concepts of electronics,\n  embedded systems,microcontrollers,IOT,VLSI. There will be 30 questions for a time limit of 60 minutes. Domains and divided into groups',
-			4: 'Round 2  : Participants will be given a problem statement and they are supposed to implement the circuit with the help of hardware components.',
+			3: '\nRound 1 (Offline) : It will consist of Multiple Choice Questions (MCQs) based on theoretical and practical concepts of electronics,\n  embedded systems,microcontrollers,IOT,VLSI. \nThere will be 30 questions for a time limit of 60 minutes. \nDomains and divided into groups',
+			4: 'Round 2 (Offline) : Participants will be given a problem statement and they are supposed to implement the circuit with the help of hardware components.',
 		},
 		rules: {
 			1: 'Each team can consist of a maximum of 3 members.',
@@ -457,14 +456,14 @@ const EventJson = [
 		},
 
 		rules: {
-			1: 'A maximum of 3 candidates pursuing undergraduate program in their institution are allowed per team.',
-			2: 'There should be no intentional damage done to the other robot by means of attacking wires, wheels, motors etc. ',
-			3: 'Any damage to the field or to the opposing robot would result in immediate disqualification of the team.',
-			4: 'There could be more than one team from same college.',
-			5: 'The bot should fit the bot limitation criteria.',
-			6: 'Teams can register at the desk put up in various colleges in and around Pune.',
-			7: 'Teams can also register at the registration desk on the day of the event, at least an hour prior to the event.',
-			8: 'All the participants should bring valid I-cards while coming for the contest. No one without I-card will be allowed for the contest and the team will be disqualified. The participants should carry the same at all times.',
+			1: '1. A maximum of 3 candidates pursuing undergraduate program in their institution are allowed per team.',
+			2: '2. There should be no intentional damage done to the other robot by means of attacking wires, wheels, motors etc. ',
+			3: '3. Any damage to the field or to the opposing robot would result in immediate disqualification of the team.',
+			4: '4. There could be more than one team from same college.',
+			5: '5. The bot should fit the bot limitation criteria.',
+			6: '6. Teams can register at the desk put up in various colleges in and around Pune.',
+			7: '7. Teams can also register at the registration desk on the day of the event, at least an hour prior to the event.',
+			8: '8. All the participants should bring valid I-cards while coming for the contest. \nNo one without I-card will be allowed for the contest and the team will be disqualified. \nThe participants should carry the same at all times.',
 			9: `\n   Robot Limitations: 
 				\n1. Maximum robot dimensions: 30cm x 30 cm x 30 cm.
 				\n2. Maximum weight 3.5 kg.
