@@ -17,16 +17,6 @@ const Cart = () => {
 	const cart = useSelector((state) => state.cart.cart);
 	const LoginStatus = useSelector((state) => state.cart.loginStatus);
 	const navigate = useNavigate();
-
-	useEffect(() => {
-		const storedCart = JSON.parse(localStorage.getItem('eventCart'));
-		if (storedCart) {
-			dispatch(emptyCart());
-			storedCart.forEach((item) => {
-				dispatch(addtoCart(item));
-			});
-		}
-	}, []);
 	const total = useSelector((state) => state.cart.totalSum);
 	const [profileOrder, setProfileOrder] = useState(null);
 
@@ -41,6 +31,16 @@ const Cart = () => {
 		};
 		getData();
 	}, []);
+
+	window.onload = function () {
+		const storedCart = JSON.parse(localStorage.getItem('eventCart'));
+		if (storedCart) {
+			dispatch(emptyCart());
+			storedCart.forEach((item) => {
+				dispatch(addtoCart(item));
+			});
+		}
+	};
 
 	function removeEvent(id) {
 		dispatch(removeFromCart(id));
@@ -195,8 +195,8 @@ const Cart = () => {
 							</p>
 							<div className="flex flex-col w-[80%] mx-auto justify-between md:my-[10%] my-5 border-2 rounded-md p-2 border-cyan-700">
 								<div className="flex flex-row justify-between w-[80%] mx-auto m-4 items-center">
-									<p className="text-lg ">Total Price :</p>
-									<p className="px-2 text-green-500">&#8377;{total}</p>
+									<p className="text-lg font-[Poppins]">Total Price :</p>
+									<p className="px-2 text-green-500">&#8377; {total}</p>
 								</div>
 								<div className="w-[100%] grid items-center text-white my-4">
 									<button
