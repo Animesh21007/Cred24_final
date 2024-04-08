@@ -40,9 +40,9 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 (Slot 1): 12th April 2024, 4:00 PM onwards',
-			'Round 1 (Slot 2): 13th April 2024, 10:00 AM to 6:00 PM',
-			'Round 2: 14th April 2024, 9:15 AM to 11:15 PM',
+			'Round 1 (Slot 1): 19th April 2024, 4:00 PM onwards',
+			'Round 1 (Slot 2): 20th April 2024, 10:00 AM to 6:00 PM',
+			'Round 2: 21th April 2024, 9:15 AM to 11:15 PM',
 		],
 	},
 
@@ -89,9 +89,9 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 (Slot 1): 12th April 2024, 04:00 PM onwards',
-			'Round 1 (Slot 2): 13th April 2024, 09:00 AM onwards',
-			'Round 2: 14th April 2024, 11:30 AM to 1:30 PM',
+			'Round 1 (Slot 1): 19th April 2024, 04:00 PM onwards',
+			'Round 1 (Slot 2): 20th April 2024, 09:00 AM onwards',
+			'Round 2: 21th April 2024, 11:30 AM to 1:30 PM',
 		],
 	},
 	{
@@ -176,7 +176,7 @@ const EventJson = [
 		],
 		datetime: [
 			'IPO release: From 10th April',
-			'Trading: 12th-14th April 2024, 9:00 AM to 3:00 PM',
+			'Trading: 19th-20th April 2024, 9:00 AM to 3:00 PM',
 		],
 	},
 	{
@@ -217,9 +217,9 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1: 12th April 2024, 01:00 PM to 3:00 PM',
-			'Round 2: 13th April 2024, 04:00 PM to 07:00 PM',
-			'Round 3: 14th April 2024, 11:30 AM to 2.30 PM',
+			'Round 1: 19th April 2024, 01:00 PM to 3:00 PM',
+			'Round 2: 20th April 2024, 04:00 PM to 07:00 PM',
+			'Round 3: 21th April 2024, 11:30 AM to 2.30 PM',
 		],
 	},
 	{
@@ -259,8 +259,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 (Slot 1): 12th April 2024, 4:30 PM to 06:00 PM',
-			'Round 2: 13th April 2024, 05:00 PM to 07:00 PM',
+			'Round 1 (Slot 1): 19th April 2024, 4:30 PM to 06:00 PM',
+			'Round 2: 20th April 2024, 05:00 PM to 07:00 PM',
 		],
 	},
 	{
@@ -301,8 +301,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Start Time: 12th April 2024 00:00 IST',
-			'End Time: 14th April 2024 23:59 IST',
+			'Start Time: 19th April 2024 00:00 IST',
+			'End Time: 20th April 2024 23:59 IST',
 		],
 	},
 	{
@@ -343,7 +343,7 @@ const EventJson = [
 				// 3: 'Third Prize: Rs. 1000',
 			},
 		],
-		datetime: ['Start Time: 12th April 2024', 'End Time: 14th April 2024'],
+		datetime: ['Start Time: 19th April 2024', 'End Time: 20th April 2024'],
 	},
 	{
 		heading: 'CRETRONIX',
@@ -383,16 +383,17 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 (Slot 1): 12th April 2024, 4:00 PM to 5:00 PM',
-			'Round 2: 13th April 2024, 10:00 AM to 02:00 PM',
+			'Round 1 (Slot 1): 19th April 2024, 4:00 PM to 5:00 PM',
+			'Round 2: 20th April 2024, 10:00 AM to 02:00 PM',
 		],
 	},
 	{
 		heading: 'WEB WEAVER',
 		body: 'Ever wondered how GSOC and other Open-Source programs work? Register now for web-weaver to get a taste!',
 		structure: {
-			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
-			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given repo for the problem statement.',
+			0: "To be announced.",
+			// 1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
+			// 2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given repo for the problem statement.',
 			// 3: 'To View the problem statements, visit https://github.com/Credenz-Web-Weaver',
 			// 4: 'Submit your ideas on this site : https://forms.gle/khmDuuHNbb2ioJ8g9',
 		},

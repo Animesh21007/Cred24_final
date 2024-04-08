@@ -117,7 +117,7 @@ const EventInfo = ({ data }) => {
 				) : (
 					<div className={'px-2 my-2 text-cente'}>{structure}</div>
 				)}
-				{id === 110 ? (
+				{id === 1178 ? (
 					<div>
 						<p className="py-1">
 							3. To View the problem statements, visit{' '}
