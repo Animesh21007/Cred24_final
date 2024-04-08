@@ -3,7 +3,7 @@ import { useThree } from '@react-three/fiber'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Bubble1() {
+function Bubble1(exploreUnderwater) {
     const aboutUs=useGLTF('/models/AboutUs.glb')
     const contactUs=useGLTF('/models/ContactUs-1.glb')
     const events=useGLTF('/models/Events-1.glb')
@@ -39,7 +39,11 @@ function Bubble1() {
     speed={0.5}
     floatingRange={[-0.05,0.05]}
     onClick={()=>{
-        navigate('/about')}}
+        if(exploreUnderwater)
+        {
+            navigate('/about')}}
+        }
+        
     >
 
         <primitive object={aboutUs.scene} dispose={null}
@@ -53,7 +57,10 @@ function Bubble1() {
     floatingRange={[-0.05,0.05]}
     onClick={()=>{
         // ADD NAVIGATE TO CONTACT US HERE
-        navigate('/contact')}}
+        if(exploreUnderwater){
+            navigate('/contact')
+        }
+       }}
     >
         <primitive object={contactUs.scene} dispose={null}
         position={p[1]}
@@ -66,7 +73,11 @@ function Bubble1() {
     floatingRange={[-0.05,0.05]}
     onClick={()=>{
         // ADD NAVIGATE TO EVENTS HERE
-        navigate('/events')}}
+        if(exploreUnderwater)
+        {
+            navigate('/events')
+        }
+       }}
     >
         <primitive object={events.scene} dispose={null}
         position={p[2]}
@@ -80,7 +91,11 @@ function Bubble1() {
     floatingRange={[-0.05,0.05]}
     onClick={()=>{
         // ADD NAVIGATE TO  SPONSORS HERE
-        navigate('/sponsors')}}
+        if(exploreUnderwater)
+        {
+            navigate('/sponsors')
+        }
+        }}
     >
         <primitive object={sponsors.scene} dispose={null}
         position={p[3]}

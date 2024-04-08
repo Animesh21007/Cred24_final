@@ -69,7 +69,7 @@ const Events = () => {
 					<div className="relative border-0">
 						<button
 							onClick={handlePass}
-							className="px-3 py-1 m-1 text-lg border-2 border-blue-600 rounded-md cursor-pointer hover:border-green-600 bg-blue-950 text-slate-200 ">
+							className=" buypass px-3 py-1 m-6 sm:m-4 text-lg border-2 border-blue-600 rounded-md cursor-pointer hover:border-green-600 bg-blue-950 text-slate-200 ">
 							Buy Pass
 						</button>
 					</div>

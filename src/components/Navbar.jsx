@@ -53,6 +53,8 @@ export default function Navbar() {
 		{ name: 'About', href: '/about', current: false },
 		{ name: 'Contact', href: '/contact', current: false },
 		{ name: 'Cart', href: '/cart', current: false },
+		// { name: 'WebTeam', href: '/webteam', current: false },
+
 		islogged
 			? { name: 'Profile', href: '/profile', current: false }
 			: { name: 'Login', href: '/login', current: false },
@@ -78,8 +80,8 @@ export default function Navbar() {
 			className="absolute w-full bg-transparent z-[50] top-0">
 			{({ open }) => (
 				<>
-					<div className="px-2 mx-auto max-w-[100%] sm:px-6 lg:px-8 b-[#0c30\41] bg-sky-200 text-white backdrop-filter backdrop-blur-md bg-opacity-10">
-						<div className="relative flex items-center justify-between h-16">
+					<div className="px-2 mx-auto max-w-[100%] sm:px-6 lg:px-8 b-[#0c30\41]  bg-sky-200 text-white backdrop-filter backdrop-blur-md bg-opacity-10">
+						<div className="relative flex  items-center justify-between h-16">
 							<div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
 								{/* Mobile menu button*/}
 								<Disclosure.Button className="relative inline-flex items-center justify-center p-2 text-gray-400 rounded-md bg-slate-900 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">

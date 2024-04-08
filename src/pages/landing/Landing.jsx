@@ -70,14 +70,14 @@ export default function Landing() {
 			{/* <Bubble layer={10}/> */}
 			{/* <Skybox/> */}
 			{/* <Bubble2/> */}
-			<Canvas className="canvas" shadows={true}>
+			<Canvas className="canvas overflow-hidden" shadows={true}>
 				<Suspense fallback={<LoadPage />}>
 					{/* <LoadPage/> */}
 
 					<Experience explore={explore3D} exploreUW={exploreUnderwater} />
 					<Ocean />
 					<Ocean2 />
-					<Bubble1 />
+					<Bubble1 exploreUnderwater={exploreUnderwater} />
 					<UnderwaterBubbles count={700} />
 					<Environment files={'/models/nightSky_underwater-1.hdr'} background />
 
