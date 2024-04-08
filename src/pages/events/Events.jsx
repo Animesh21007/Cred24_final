@@ -19,13 +19,13 @@ const Events = () => {
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
 	function handlePass() {
-		dispatch(emptyCart());
-		setTimeout(() => {
-			dispatch(buyPass(Event));
-		}, 1000);
-		dispatch(totalsome(250));
 		// console.log(object);
 		if (LoginStatus) {
+			dispatch(emptyCart());
+			setTimeout(() => {
+				dispatch(buyPass(Event));
+			}, 1000);
+			dispatch(totalsome(250));
 			navigate('/paymentpass');
 		} else {
 			toast.warning('Login First!', {
@@ -71,7 +71,7 @@ const Events = () => {
 					<div className="relative border-0">
 						<button
 							onClick={handlePass}
-							className="px-3 py-1 m-16 sm:m-4 text-lg border-2 border-blue-600 rounded-md cursor-pointer hover:border-green-600 bg-blue-950 text-slate-200 ">
+							className="px-3 py-1 m-16 text-lg border-2 border-blue-600 rounded-md cursor-pointer sm:m-4 hover:border-green-600 bg-blue-950 text-slate-200 ">
 							Buy Pass
 						</button>
 					</div>

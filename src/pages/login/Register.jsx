@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, Fragment } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import Requests from '../../api/ApiList';
@@ -6,6 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import Switcher10 from './Switcher10';
 import { useDispatch } from 'react-redux';
 import { setLogin } from '../../redux/cartSlices';
+import { Dialog, Transition } from '@headlessui/react';
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -18,6 +19,15 @@ const Register = () => {
 
 	const [userType, setUserType] = useState(false);
 
+	let [isOpen, setIsOpen] = useState(false);
+
+	function closeModal() {
+		setIsOpen(false);
+	}
+
+	function openModal() {
+		setIsOpen(false);
+	}
 	const onSubmit = (data) => {
 		data = { ...data, senior: userType };
 
@@ -31,8 +41,6 @@ const Register = () => {
 					border: '1px solid gray',
 				},
 			});
-
-			// return;
 		}
 
 		if (data.cpassword === data.password && data.password.length > 6) {
@@ -61,6 +69,7 @@ const Register = () => {
 							border: '1px solid gray',
 						},
 					});
+					// openModal();
 					navigate('/');
 					dispatch(setLogin());
 				})
@@ -243,6 +252,58 @@ const Register = () => {
 						</div>
 					</div>
 				</form>
+				<div>
+					<Transition appear show={isOpen} as={Fragment}>
+						<Dialog as="div" className="relative z-10" onClose={closeModal}>
+							<Transition.Child
+								as={Fragment}
+								enter="ease-out duration-300"
+								enterFrom="opacity-0"
+								enterTo="opacity-100"
+								leave="ease-in duration-200"
+								leaveFrom="opacity-100"
+								leaveTo="opacity-0">
+								<div className="fixed inset-0 bg-black/25" />
+							</Transition.Child>
+
+							<div className="fixed inset-0 overflow-y-auto">
+								<div className="flex items-center justify-center min-h-full p-4 text-center">
+									<Transition.Child
+										as={Fragment}
+										enter="ease-out duration-300"
+										enterFrom="opacity-0 scale-95"
+										enterTo="opacity-100 scale-100"
+										leave="ease-in duration-200"
+										leaveFrom="opacity-100 scale-100"
+										leaveTo="opacity-0 scale-95">
+										<Dialog.Panel className="w-full max-w-md p-6 overflow-hidden text-left align-middle transition-all transform shadow-xl bg-blue-950 rounded-2xl">
+											<Dialog.Title
+												as="h3"
+												className="text-lg font-medium leading-6 text-blue-300 font-[AzonixRegular]">
+												Verify Email
+											</Dialog.Title>
+											<div className="mt-2">
+												<p className="font-[Poppins] text-sm text-slate-300">
+													Your email verification is initiated. We’ve sent you
+													an email for verifications.
+												</p>
+											</div>
+
+											<div className="mt-4">
+												<button
+													type="button"
+													className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md hover:text-white hover:bg-sky-950 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+													onClick={closeModal}>
+													Got it!
+												</button>
+											</div>
+										</Dialog.Panel>
+									</Transition.Child>
+								</div>
+							</div>
+						</Dialog>
+					</Transition>
+				</div>
 			</div>
 		</div>
 	);

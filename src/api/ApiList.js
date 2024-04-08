@@ -67,9 +67,13 @@ const adminPass = (data) =>
 	});
 const feedback = (data) =>
 	axiosInstance.post(`/feedback/`, data, { headers: {} });
+
+// const verifyEmail = () =>{
+// 	axiosInstance.post('/verify-email')
+// }
 // const leaderboard = () => axiosInstance.get(`/leaderboard/`, { headers: {} });
 // const rc = (data) => axiosInstance.post(`/rc-api/`, data, { headers: {} });
-8459320663;
+// 8459320663;
 const Requests = {
 	register, //
 	login, //
