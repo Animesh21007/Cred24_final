@@ -28,8 +28,8 @@ const LoginPage = () => {
 			</div>
 			<div className="sm:w-[100%] md:w-[70%] h-[70%] mx-auto">
 				<ReactCardFlip isFlipped={isflipped} flipDirection="horizontal">
+					<Register></Register> 
 					<Login></Login>
-					<Register></Register>
 				</ReactCardFlip>
 			</div>
 		</div>
