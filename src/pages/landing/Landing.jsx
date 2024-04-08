@@ -26,10 +26,10 @@ export default function Landing() {
 		<>
 			{showToggle && (
 				<div className="controller">
-					<div className="flex-row mb-28 toggle-div font-[Poppins]">
+					<div className=" mb-28 toggle-div font-[Poppins]">
 						{!exploreUnderwater && (
 							<div className="switch-container">
-								<div className="container">
+								<div className="container flex justify-center text-center">
 									<input
 										type="checkbox"
 										name="checkbox"
@@ -48,7 +48,7 @@ export default function Landing() {
 						)}
 						{!explore3D && (
 							<div className="switch-container">
-								<div className="container">
+								<div className="container flex  justify-center text-center">
 									<input
 										type="checkbox"
 										name="checkbox"
@@ -59,7 +59,8 @@ export default function Landing() {
 									/>
 									<label className="label2" htmlFor="checkbox2"></label>
 								</div>
-								<p className="toggle-tag">Explore UnderWater</p>
+								<p className="toggle-tag">Explore 
+								<br></br> UnderWater</p>
 							</div>
 						)}
 					</div>
@@ -77,7 +78,7 @@ export default function Landing() {
 					<Experience explore={explore3D} exploreUW={exploreUnderwater} />
 					<Ocean />
 					<Ocean2 />
-					<Bubble1 />
+					<Bubble1 exploreUnderwater={exploreUnderwater} />
 					<UnderwaterBubbles count={700} />
 					<Environment files={'/models/nightSky_underwater-1.hdr'} background />
 

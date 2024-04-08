@@ -26,7 +26,7 @@ function Navbar() {
 	];
 
 	return (
-		<nav className="md:p-2 md:px-3 md:absolute w-full bg-transparent z-[50] top-0 !bg-slate-900 relative [&::-webkit-scrollbar]:[height:2px]">
+		<nav className="md:p-2 md:px-3 md:fixed w-full bg-transparent z-[50] top-0 !bg-slate-900 relative [&::-webkit-scrollbar]:[height:2px]">
 			<div className="md:px-2 mx-auto max-w-[100%] b-[#0c30\41] text-white backdrop-filter backdrop-blur-md bg-opacity1">
 				<div className="block p-2 lg:hidden md:hidden">
 					<Disclosure>

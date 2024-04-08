@@ -1,6 +1,6 @@
 
 .toggle-div{
-    position: absolute;
+    position:fixed;
 
     z-index: 2;
     display: flex;
@@ -40,21 +40,7 @@
   font-weight: 600;
 }
 
-@media(max-width: 600px){
-  .toggle-div{
-    flex-direction: column;
-    gap:20%;
-    align-items: flex-start;
-    width: 50%;
-    /* left: 30%; */
 
-  }
-  .switch-container{
-    flex-direction: row;
-    /* gap: 10%; */
-
-  }
-}
 
 .label1 {
   height: 40px;
@@ -201,3 +187,36 @@
   overflow: hidden;
 
 } */
+
+@media(max-width: 600px){
+  .toggle-div{
+    flex-direction: row;
+    gap:10%;
+    align-items: flex-start;
+    width: 30%;
+    /* left: 30%; */
+
+  }
+  .label1, .label2
+  {
+    height: 30px;
+    width: 60px;
+
+  }
+  .label1::before, .label2::before{
+    height: 22px;
+    width: 22px;
+    left:6px;
+  }
+  #checkbox1:checked ~ .label1::before,#checkbox2:checked ~ .label2::before{
+          left: 32px;
+  }
+  .switch-container{
+    flex-direction: row;
+    gap: 5%;
+
+  }
+  .toggle-tag{
+    font-size: 0.9em;
+  }
+}

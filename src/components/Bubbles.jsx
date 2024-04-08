@@ -15,9 +15,9 @@ function UnderwaterBubbles({ count }) {
     useFrame(() => {
         bubbles.current.forEach((bubble) => {
             // Move the bubble upwards
-            bubble.position.y += 0.05;
+            bubble.position.y += 0.04;
             // Reset position if the bubble goes above the water surface
-            if (bubble.position.y > 0.3) {
+            if (bubble.position.y > 0.2) {
                 bubble.position.set(
                     getRandomInRange(-100,100),
                     getRandomInRange(-200,0),
