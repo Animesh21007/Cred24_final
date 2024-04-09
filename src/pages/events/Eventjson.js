@@ -425,9 +425,10 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 Start: 16th April 2024',
-			'Round 1 Submission : 20th April 2024, 11:59 PM',
-			'Round 2: 21th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			// 'Round 1 Start: 16th April 2024',
+			// 'Round 1 Submission : 20th April 2024, 11:59 PM',
+			// 'Round 2: 21th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			'To be announced.',
 		],
 	},
 	{
