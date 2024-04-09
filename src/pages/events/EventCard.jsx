@@ -121,11 +121,11 @@ const EventCard = ({ img, item }) => {
 								leave="ease-in duration-200"
 								leaveFrom="opacity-100 scale-100"
 								leaveTo="opacity-0 scale-95">
-								<Dialog.Panel className="bg-[#04121c] [&::-webkit-scrollbar]:[width:2px]  shadow-lg w-full max-w-4xl md:max-h-[550px] sm:h-[560px] overflow-y-scroll p-2 md:p-6 md:overflow-hidden text-left align-middle transition-all transform border-t-2 border-b-2 border-teal-600 infobox">
+								<Dialog.Panel className="bg-[#04121c] [&::-webkit-scrollbar]:[width:2px] overflown  shadow-lg w-full max-w-4xl md:max-h-[550px] sm:h-[560px] overflow-y-scroll p-2 md:p-6 md:overflow-hidden text-left align-middle transition-all transform border-t-2 border-b-2 border-teal-600 infobox">
 									<Dialog.Title
 										as="h3"
 										className="text-lg font-medium leading-6 text-gray-900">
-										<div className="flex justify-between py-2 mx-2 text-2xl text-teal-100 ">
+										<div className="flex justify-between py-2 mx-2 text-lg text-teal-100 md:text-2xl">
 											<p>{item.heading}</p>
 											<button onClick={closeModal}>
 												<i className="fa-regular fa-circle-xmark"></i>
@@ -140,16 +140,18 @@ const EventCard = ({ img, item }) => {
 										<div
 											className={`
 												// item.id === 3 ? 'hidden' : ''
-											 w-[100%] flex-1 text-center m-2 flex items-center`}>
-											<p className="mx-2 text-lg text-teal-200">{item.team}</p>
+											  flex-1 text-center m-2 flex items-center`}>
+											<p className="mx-2 text-teal-200 md:text-lg text-md">
+												{item.team}
+											</p>
 										</div>
 										<div className="flex items-center justify-between px-2">
 											<div
 												className={` flex flex-row items-center bg-teal-950 border-teal-500 border-b-2 border-t-2 my-1`}>
-												<h3 className="p-1 mx-1 text-xl text-slate-300">
+												<h3 className="p-1 mx-1 text-md md:text-xl text-slate-300">
 													Cost
 												</h3>
-												<p className="flex flex-row px-1 m-1 text-xl text-green-500 rounded-md py-auto">
+												<p className="flex flex-row px-1 m-1 text-green-500 rounded-md md:text-xl text-md py-auto">
 													<p className="px-1">&#8377;</p>
 													{item.id !== 103 ? item.amount : 'Free'}
 												</p>

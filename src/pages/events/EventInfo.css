@@ -1,7 +1,13 @@
-@media (max-height:550px) {
+@media (max-height:608px) {
     .infobox{
         overflow: scroll!important;
        
-        max-height: 400px!important;
+        max-height: 450px!important;
     }
 }
+
+/* @media (max-width: 610px) {
+    .infobox{
+        height: 450px;
+    }
+} */

@@ -22,6 +22,7 @@ import Admin from './pages/admin/Admin';
 import LoginContext from './utils/loginContext/LoginContext';
 import Landing from './pages/landing/Landing';
 import Error from './pages/error/Error';
+import VerifyMail from './pages/login/VerifyMail';
 
 function App() {
 	const loggedIn = useSelector((state) => state.cart.loginStatus);
