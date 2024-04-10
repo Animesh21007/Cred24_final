@@ -1,4 +1,4 @@
-animation3, .animation_layer3 {
+.animation3, .animation_layer3 {
   height:1000px;
   }
   
@@ -16,7 +16,7 @@ animation3, .animation_layer3 {
       width: 100%;
       position: absolute;
   }
-  .animation_layer.parallax3 {
+  .animation_layer .parallax3 {
       position: fixed;
   }
 

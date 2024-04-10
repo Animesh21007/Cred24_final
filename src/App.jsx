@@ -22,7 +22,8 @@ import Admin from './pages/admin/Admin';
 import LoginContext from './utils/loginContext/LoginContext';
 import Landing from './pages/landing/Landing';
 import Error from './pages/error/Error';
-
+import WebTeam from './pages/webteam/WebTeam'
+// import WebTeam from './pages/Web-Team/WebTeam';
 function App() {
 	const loggedIn = useSelector((state) => state.cart.loginStatus);
 	return (
@@ -49,6 +50,8 @@ function App() {
 						<Route path="/sponsors" element={<Sponsors />} />
 						<Route path="/cart" element={<Cart />} />
 						<Route path="/about" element={<About />}></Route>
+						<Route path="/webteam" element={<WebTeam />}></Route>
+
 						{loggedIn && <Route path="/payment" element={<Payment />} />}
 						<Route path="*" element={<Error />} />
 					</Routes>

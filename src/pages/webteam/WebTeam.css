@@ -1,0 +1,158 @@
+animation4, .animation_layer4 {
+    height:1000px;
+    }
+    
+    .animation4 {
+      display: block;
+      height:auto;
+        position: relative;
+        z-index: 10;
+    }
+    
+    .animation_layer4 {
+        background-position: bottom center;
+        background-size: auto 1000px;
+        background-repeat: no-repeat;
+        width: 100%;
+        position: absolute;
+    }
+    .animation_layer.parallax4 {
+        position: fixed;
+    }
+  
+    #bgwt {
+        background-image: url(../../assets/EventPagesvgs/BG.svg);
+        height:800px;
+      }
+      
+      #wtlayers0 {
+        background-image: url(../../assets/webteamImages/Folder1.svg);
+        margin-bottom:'50px';
+      }
+       #wtlayers1 {
+        background-image: url(../../assets/webteamImages/Folder2.svg);
+        margin-bottom:'40px';
+      }
+      #wtlayers2 {
+        background-image: url(../../assets/webteamImages/Folder3.svg);
+        margin-bottom:'40px';
+      }
+     #wtlayers3 {
+        background-image: url(../../assets/webteamImages/Folder4.svg);
+        
+      }
+      #wtlayers4 {
+        background-image: url(../../assets/webteamImages/Seaweed.svg);
+        
+      }
+      /* #wtlayers5 {
+        background-image: url(../../assets/Sponsormodified//fishs2.svg);
+        
+      /* } */
+      #wtlayers6 {
+        background-image: url(../../assets/sponsor22/submarine.svg);
+        margin-top: 10px;
+        
+        animation: animate 10s linear infinite
+      }   
+      @media (max-width: 768px) {
+        #wtlayers6 {
+            /* Adjust the background size as needed for smaller screens */
+            background-size: 120%; /* Decrease the size to 50% */
+        }
+    }
+    @media (max-width: 1024px) {
+      #wtlayers6 {
+          /* Adjust the background size as needed for smaller screens */
+          background-size: 120%; /* Decrease the size to 50% */
+      }
+  }
+      @keyframes animate 
+      {
+        0%
+        {
+          transform: translateY(-50px);
+          left: -25%;
+        }
+        25%
+        {
+          transform: translateY(0px);
+        }50%
+        {
+          transform: translateY(50px);
+        }75%
+        {
+          transform: translateY(0px);
+        }100%
+        {
+          transform: translateY(-50px);
+          left: 150%;
+        }
+      }
+      /* #wtlayers7 {
+        background-image: url(../../assets/sponsor22/turtle.svg);
+        position: absolute;
+        
+      
+          animation: animate 40s linear infinite
+      } */
+      @media (max-width: 768px) {
+        #wtlayers7 {
+            /* Adjust the background size as needed for smaller screens */
+            background-size: 150%; /* Decrease the size to 50% */
+        }
+    }
+      @keyframes animate 
+      {
+        0%
+        {
+          transform: translateY(-50px);
+          left: -25%;
+        }
+        25%
+        {
+          transform: translateY(0px);
+        }50%
+        {
+          transform: translateY(50px);
+        }75%
+        {
+          transform: translateY(0px);
+        }100%
+        {
+          transform: translateY(-50px);
+          left: 150%;
+        }
+      }
+      #wtlayers8 { 
+        background-image: url(../../assets/sponsor22/fishs.svg); 
+         right: '50px'; 
+      } 
+       #wtlayers9 {
+        background-image: url(../../assets/sponsor22/gelifish1.svg);
+        
+      } 
+      #wtlayers10 {
+        background-image: url(../../assets/Contactus/bubbles.png);
+        
+      }
+
+      .wteam{
+        display: flex;
+        flex-direction: column;
+       
+      }
+      .forsmallsize{
+          display: none;
+      }
+      @media (max-width: 700px) {
+       .wteam{
+        display: none;
+       padding-top:'100px';
+       }
+       .forsmallsize{
+        display: flex;
+        flex-direction: column;
+        
+       }
+    }
