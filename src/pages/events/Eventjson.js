@@ -175,7 +175,7 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'IPO release: From 10th April',
+			'IPO release: From 16th April',
 			'Trading: 19th-20th April 2024, 9:00 AM to 3:00 PM',
 		],
 	},
@@ -391,7 +391,7 @@ const EventJson = [
 		heading: 'WEB WEAVER',
 		body: 'Ever wondered how GSOC and other Open-Source programs work? Register now for web-weaver to get a taste!',
 		structure: {
-			0: "To be announced.",
+			0: 'To be announced.',
 			// 1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
 			// 2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given repo for the problem statement.',
 			// 3: 'To View the problem statements, visit https://github.com/Credenz-Web-Weaver',
@@ -425,9 +425,10 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 Start: 8th April 2024',
-			'Round 1 Submission : 11th April 2024, 11:59 PM',
-			'Round 2: 13th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			// 'Round 1 Start: 16th April 2024',
+			// 'Round 1 Submission : 20th April 2024, 11:59 PM',
+			// 'Round 2: 21th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			'To be announced.',
 		],
 	},
 	{
@@ -503,8 +504,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'All matches: 12th April 2024, 11:00 AM to 7:00 PM',
-			'Semi-finals and Finals: 13th April 2024, 11:00 PM to 3:00 PM',
+			'All matches: 19th April 2024, 11:00 AM to 7:00 PM',
+			'Semi-finals and Finals: 20th April 2024, 11:00 PM to 3:00 PM',
 		],
 	},
 
@@ -543,9 +544,9 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Environment Release: 12th April',
-			'Bot Submission: 12th and 13th April',
-			'Matches: 14th April',
+			'Environment Release: 19th April',
+			'Bot Submission: 19th and 20th April',
+			'Matches: 21th April',
 		],
 	},
 ];

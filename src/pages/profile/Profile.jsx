@@ -32,7 +32,7 @@ const Profile = () => {
 			try {
 				const res = await Requests.profile();
 				setProfileInfo(res.data);
-				console.log(res.data);
+				// console.log(res.data);
 			} catch (err) {
 				if (err.response && err.response.statusText === 'Unauthorized') {
 					navigate('/login');
@@ -87,7 +87,7 @@ const Profile = () => {
 	};
 
 	return (
-		<div className=" md:w-[100%] w-[fit-content] bg-[#0f1b3] select-none rounded-xl">
+		<div className=" md:w-[100%] w-[-webkit-fill-available] bg-[#0f1b3] select-none rounded-xl">
 			<div className="md:w-[85%] w-[100%] h-[100%] m-auto bg-[#0f1b34] text-white rounded-xl">
 				<ProfileContext.Provider value={profileInfo}>
 					<div className="flex md:flex-row flex-col h-[100%] rounded-xl border-sate-500 md:border-4 border-purple-900">

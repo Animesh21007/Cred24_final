@@ -22,6 +22,7 @@ import Admin from './pages/admin/Admin';
 import LoginContext from './utils/loginContext/LoginContext';
 import Landing from './pages/landing/Landing';
 import Error from './pages/error/Error';
+import VerifyMail from './pages/login/VerifyMail';
 import WebTeam from './pages/webteam/WebTeam'
 // import WebTeam from './pages/Web-Team/WebTeam';
 function App() {
