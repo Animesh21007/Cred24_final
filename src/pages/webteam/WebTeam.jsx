@@ -12,12 +12,12 @@ import { v4 as uuidv4 } from 'uuid';
 import './WebTeam.css'
 import CardNew from '../../components/cards/WebTeamCard';
 import hk from '../../assets/webteamphotos/hk2.jpg'
-import ani from '../../assets/webteamphotos/ani2.jpg'
+import ani from '../../assets/webteamphotos/ani3.jpg'
 import hitesh from '../../assets/webteamphotos/hitesh.jpg'
 import lol from '../../assets/webteamphotos/lolwani.jpg'
 import mb from '../../assets/webteamphotos/mb.jpg'
 import pj from '../../assets/webteamphotos/pj.jpg'
-import samir from '../../assets/webteamphotos/samir.jpg'
+import samir from '../../assets/webteamphotos/Samir.jpg'
 import wtAnu from '../../assets/webteamphotos/wtAnu.jpg'
 import wtsri from '../../assets/webteamphotos/wtsri.jpg'
 import wtkulkarni from '../../assets/webteamphotos/wtkulkarni.jpg'
@@ -251,7 +251,7 @@ const WebTeam = () => {
 								/>
 								<CardNew
 									imagen={wtAnu}
-									name={'Anujha'}
+									name={'Anujha Barawkar'}
 									
 								/>
 							</div>
