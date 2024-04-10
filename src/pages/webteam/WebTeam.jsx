@@ -177,7 +177,7 @@ const WebTeam = () => {
 						<div className="animation_layer parallax4" id="wtlayers3"></div>
 					</ParallaxLayer>
 					<ParallaxLayer offset={0} speed={-0.3}>
-						<div className="flex items-start justify-center font-extrabold text-center text-[#093c6ef6] align-middle animation_layer parallax4 mt-[10rem] sm:mt-24 md:mt-12 lg:mt-8 text-5xl sm:text-8xl md:text-7xl lg:text-9xl">
+						<div className="flex items-start justify-center font-extrabold text-center text-[#093c6ef6] align-middle animation_layer parallax4 mt-[20rem] sm:mt-24 md:mt-20 lg:mt-8 text-5xl sm:text-8xl md:text-7xl lg:text-9xl">
 							<p className="mt-[20%]"> Web Team</p>
 						</div>
 					</ParallaxLayer>
