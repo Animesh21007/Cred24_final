@@ -393,8 +393,8 @@ const EventJson = [
 		structure: {
 			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
 			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.',
-			3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
-			4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
+			// 3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
+			// 4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
 		},
 		rules: {
 			1: 'Each team can consist of a maximum of 4 members.',

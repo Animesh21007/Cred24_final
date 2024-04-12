@@ -117,22 +117,22 @@ const EventInfo = ({ data }) => {
 				) : (
 					<div className={'px-2 my-2 text-cente'}>{structure}</div>
 				)}
-				{id === 1178 ? (
+				{id === 110 ? (
 					<div>
 						<p className="py-1">
 							3. To View the problem statements, visit{' '}
 							<a
-								href="https://github.com/Credenz-Web-Weaver"
+								href=" https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing"
 								className="text-blue-400 underline underline-blue-500">
-								https://github.com/Credenz-Web-Weaver
+								 https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing
 							</a>
 						</p>
 						<p className="py-1">
 							4. Submit your ideas here :
 							<a
-								href="https://forms.gle/khmDuuHNbb2ioJ8g9"
+								href="https://unstop.com/o/uv4cKVr?lb=aCmVWhXh"
 								className="text-blue-400 underline underline-blue-500">
-								https://forms.gle/khmDuuHNbb2ioJ8g9
+								https://unstop.com/o/uv4cKVr?lb=aCmVWhXh
 							</a>
 						</p>
 					</div>
