@@ -389,25 +389,24 @@ const EventJson = [
 	},
 	{
 		heading: 'WEB WEAVER',
-		body: 'Ever wondered how GSOC and other Open-Source programs work? Register now for web-weaver to get a taste!',
+		body: 'PISB introduces WebWeaver, brought to you by fetch.ai. Dive into the unique fetch.ai collection to create scenarios and compete in exciting challenges for substantial rewards.',
 		structure: {
-			0: 'To be announced.',
-			// 1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
-			// 2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given repo for the problem statement.',
-			// 3: 'To View the problem statements, visit https://github.com/Credenz-Web-Weaver',
-			// 4: 'Submit your ideas on this site : https://forms.gle/khmDuuHNbb2ioJ8g9',
+			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
+			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.',
+			3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
+			4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
 		},
 		rules: {
-			1: 'Each team can consist of a maximum of 3 members.',
+			1: 'Each team can consist of a maximum of 4 members.',
 			2: 'For first round, participants need to submit their idea about the problem statement in PPT or PDF.',
 			3: 'Use of ready-made templates is not allowed.',
 			4: 'People opting for backend are supposed to build at least a minimalistic frontend to showcase their work.',
 		},
 		id: 110,
-		amount: 75,
+		amount: 50,
 		count: 1,
-		team: 'Maximum 3 players are allowed',
-		max: 3,
+		team: 'Maximum 4 players are allowed',
+		max: 4,
 		contact: [
 			{
 				name: 'Sarthak Phadnis',
@@ -420,15 +419,15 @@ const EventJson = [
 		],
 		prizes: [
 			{
-				1: 'First Prize: Rs. 3000',
-				2: 'Second Prize: Rs. 2000',
+				1: 'First Prize: Rs. 15000',
+				2: 'Second Prize: Rs. 10000',
 			},
 		],
 		datetime: [
-			// 'Round 1 Start: 16th April 2024',
-			// 'Round 1 Submission : 20th April 2024, 11:59 PM',
-			// 'Round 2: 21th April 2024, 10:00 AM to 6:00 PM (Offline)',
-			'To be announced.',
+			'Round 1 Start: 16th April 2024',
+			'Round 1 Submission : 16th April 2024, 11:59 PM',
+			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			
 		],
 	},
 	{

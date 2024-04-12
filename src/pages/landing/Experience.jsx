@@ -49,6 +49,8 @@ export default function Experience({explore, exploreUW}) {
         enableZoom={false}
         enableDamping
         enablePan={false}
+        maxDistance={30}
+        minDistance={13}
         makeDefault
         />
     }
