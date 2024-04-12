@@ -390,14 +390,12 @@ const EventJson = [
 	{
 		heading: 'WEB WEAVER',
 		body: 'PISB introduces WebWeaver, brought to you by fetch.ai. Dive into the unique fetch.ai collection to create scenarios and compete in exciting challenges for substantial rewards.',
-		
 		structure: {
-				"1": "Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.",
-				"2": "Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.",
-				"3": "To View the problem statements, visit <a href='https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing'>here</a>.",
-				"4": "Submit your ideas on this site: <a href='https://unstop.com/o/uv4cKVr?lb=aCmVWhXh'>https://unstop.com/o/uv4cKVr?lb=aCmVWhXh</a>."
-			},
-		
+			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
+			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.',
+			3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
+			4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
+		},
 		rules: {
 			1: 'Each team can consist of a maximum of 4 members.',
 			2: 'For first round, participants need to submit their idea about the problem statement in PPT or PDF.',
