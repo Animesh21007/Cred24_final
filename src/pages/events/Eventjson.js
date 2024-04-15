@@ -332,8 +332,8 @@ const EventJson = [
 				phone: '+91 98340 56254',
 			},
 			{
-				name: 'Mitra Barve',
-				phone: '+91 94223 14442',
+				name: 'Aayush Mohad',
+				phone: '+91 8329465811',
 			},
 		],
 		prizes: [
@@ -403,7 +403,7 @@ const EventJson = [
 			4: 'People opting for backend are supposed to build at least a minimalistic frontend to showcase their work.',
 		},
 		id: 110,
-		amount: 50,
+		amount: 0,
 		count: 1,
 		team: 'Maximum 4 players are allowed',
 		max: 4,
@@ -424,7 +424,7 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'Round 1 Start: 12th April 2024',
+			'Round 1 Start: 12-th April 2024',
 			'Round 1 Submission : 16th April 2024, 11:59 PM',
 			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
 			
