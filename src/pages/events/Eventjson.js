@@ -425,7 +425,7 @@ const EventJson = [
 		],
 		datetime: [
 			'Round 1 Start: 12-th April 2024',
-			'Round 1 Submission : 16th April 2024, 11:59 PM',
+			'Round 1 Submission (Last Date) : 17th April 2024, 11:59 PM',
 			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
 			
 		],
