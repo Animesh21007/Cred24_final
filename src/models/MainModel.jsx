@@ -12,7 +12,7 @@ export default function MainModel({exploreUnderwater}) {
   const raycaster = useRef(new Raycaster());
   const mouse = useRef(new Vector2());
   const [move,setMove]=useState(false)
-  const Island = useGLTF('/models/blueIsland.glb')
+  const Island = useGLTF('/models/credenz_with_dates_no_sub.glb')
   const Submarine = useGLTF('/models/blueSub.glb')  
   const plane = useRef()
   const Sub = useRef()
@@ -123,4 +123,4 @@ export default function MainModel({exploreUnderwater}) {
 }
 
 useGLTF.preload('/models/blueSub.glb')
-useGLTF.preload('/models/blueIsland.glb')
+useGLTF.preload('/models/credenz_with_dates_no_sub.glb')
