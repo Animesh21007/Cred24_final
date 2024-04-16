@@ -51,7 +51,7 @@ const MyTeam = () => {
 					{teamInfo.map((team) => (
 						<div
 							key={team.id}
-							className="flex flex-col justify-between p-2 mx-auto font-[Poppins] border-2 rounded-lg sm:flex-row mb-4 border-violet-300">
+							className="flex flex-col justify-between p-2 max-h-[] mx-auto font-[Poppins] border-2 rounded-lg sm:flex-row mb-4 border-violet-300">
 							<div className="flex items-center py-2 mx-2 my-auto border-b-2 md:border-none md:flex-col">
 								<p className="text-center text-cyan-200">
 									{team.event.event_name}
@@ -360,7 +360,7 @@ export default function Teams() {
 						<Tab.Panel
 							key={idx * Math.random()}
 							className={classNames(
-								'rounded-xl bg-[#0f1b34] p-3 px-0 md:px-3',
+								'rounded-xl bg-[#0f1b34] p-3 px-0 md:px-3 overflow-y-scroll [&::-webkit-scrollbar]:[width:1px] [&::-webkit-scrollbar]:[background:transparent]',
 								'ring-white/60 ring-offset-2 ring-offset-blue-400 focus:outline-none focus:ring2'
 							)}>
 							{posts}

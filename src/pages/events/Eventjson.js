@@ -1,5 +1,48 @@
 const EventJson = [
 	{
+		heading: 'WEB WEAVER',
+		body: 'PISB introduces WebWeaver, brought to you by fetch.ai. Dive into the unique fetch.ai collection to create scenarios and compete in exciting challenges for substantial rewards.',
+		structure: {
+			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
+			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.',
+			// 3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
+			// 4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
+		},
+		rules: {
+			1: 'Each team can consist of a maximum of 4 members.',
+			2: 'For first round, participants need to submit their idea about the problem statement in PPT or PDF.',
+			3: 'Use of ready-made templates is not allowed.',
+			4: 'People opting for backend are supposed to build at least a minimalistic frontend to showcase their work.',
+		},
+		id: 110,
+		amount: 0,
+		count: 1,
+		team: 'Maximum 4 players are allowed',
+		max: 4,
+		contact: [
+			{
+				name: 'Sarthak Phadnis',
+				phone: '+91 99306 11330',
+			},
+			{
+				name: 'Shreya Bansod',
+				phone: '+91 79726 16766',
+			},
+		],
+		prizes: [
+			{
+				1: 'First Prize: Rs. 15000',
+				2: 'Second Prize: Rs. 10000',
+			},
+		],
+		datetime: [
+			'Round 1 Start: 12-th April 2024',
+			'Round 1 Submission (Last Date) : 17th April 2024, 11:59 PM',
+			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
+			
+		],
+	},
+	{
 		heading: 'CLASH',
 		body: 'Put your logical acumen and coding expertise to the test as you clash with a round of perplexing MCQs followed by a set of time-bound coding challenges,carefully designed to assess your command over programming in the language of your choice- Python, C or C++. Showcase your technical proficiency as you have a go at competitive coding with plenty to learn and nothing to lose.',
 		id: 101,
@@ -387,49 +430,7 @@ const EventJson = [
 			'Round 2: 20th April 2024, 10:00 AM to 02:00 PM',
 		],
 	},
-	{
-		heading: 'WEB WEAVER',
-		body: 'PISB introduces WebWeaver, brought to you by fetch.ai. Dive into the unique fetch.ai collection to create scenarios and compete in exciting challenges for substantial rewards.',
-		structure: {
-			1: 'Round 1: It is the idea submission round. Participants need to submit the idea for way of approach using PPT or PDF for the given problem statements.',
-			2: 'Round 2: It is the actual implementation of the problem statement. In the given time duration participants can submit their implementation to the given problem statements.',
-			// 3: 'To View the problem statements, visit https://drive.google.com/file/d/1j4a28lEqS1tdbqAz7QZsXBZtABA56oWv/view?usp=sharing',
-			// 4: 'Submit your ideas on this site : https://unstop.com/o/uv4cKVr?lb=aCmVWhXh',
-		},
-		rules: {
-			1: 'Each team can consist of a maximum of 4 members.',
-			2: 'For first round, participants need to submit their idea about the problem statement in PPT or PDF.',
-			3: 'Use of ready-made templates is not allowed.',
-			4: 'People opting for backend are supposed to build at least a minimalistic frontend to showcase their work.',
-		},
-		id: 110,
-		amount: 0,
-		count: 1,
-		team: 'Maximum 4 players are allowed',
-		max: 4,
-		contact: [
-			{
-				name: 'Sarthak Phadnis',
-				phone: '+91 99306 11330',
-			},
-			{
-				name: 'Shreya Bansod',
-				phone: '+91 79726 16766',
-			},
-		],
-		prizes: [
-			{
-				1: 'First Prize: Rs. 15000',
-				2: 'Second Prize: Rs. 10000',
-			},
-		],
-		datetime: [
-			'Round 1 Start: 12-th April 2024',
-			'Round 1 Submission (Last Date) : 17th April 2024, 11:59 PM',
-			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
-			
-		],
-	},
+	
 	{
 		heading: 'ROBOLIGA',
 		body: 'For those passionate about robotics and seeking an adrenaline-fueled challenge, an exciting event awaits. Bring your innovative creations and football skills to the field, where competitors will engage in a thrilling showdown for supremacy. Prepare to be amazed as bots showcase remarkable speed, agility, and strategic prowess in their quest for victory.',
@@ -516,11 +517,11 @@ const EventJson = [
 			'It would be a single-round competition and matches will be held in a single-elimination format.',
 		rules: {
 			1: "The game environment for the competition would be 'Pocket Tanks'.",
-			2: 'The details of the game environment will be released on the 12th April.',
+			2: 'The details of the game environment will be released on the 19th April.',
 			3: 'Participants have to build bots capable of competing against other bots in the provided game environment and submit them before the given deadline.',
 			4: 'Participants can submit both RL (Reinforcement Learning) based as well as algorithmic bots.',
 			5: 'The standard format of bot submission would be conveyed to participants.',
-			6: 'The matches between bots will be conducted and streamed on the 14th April',
+			6: 'The matches between bots will be conducted and streamed on the 21th April',
 		},
 		amount: 50,
 		count: 1,

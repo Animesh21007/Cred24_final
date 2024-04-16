@@ -8,13 +8,15 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import './Events.css';
 import './EventInfo.css';
-
+// Clash rc enigma webweaver wallstreet
 import { CardBody, CardContainer } from './../../components/ui/3d-card';
 
 const EventCard = ({ img, item }) => {
 	let [isOpen, setIsOpen] = useState(false);
 	const cart = useSelector((state) => state.cart.cart);
-
+const [isFlagShip, setIsFlagShip] = useState(false);
+	const flags = [101,102,110];
+	// flags.map((itm)=>if(itm === item.id){setIsFlagShip(true))
 	let added = false;
 	if (cart) {
 		const addedif = cart.find((itm) => itm.id === parseInt(item.id));
@@ -85,7 +87,14 @@ const EventCard = ({ img, item }) => {
 						<CardBody
 							translateZ="100"
 							className="!h-[fit-content] !w-[fit-content] !p-0">
-							<div className="eventCart transition duration-100 text-md hover:text-gl hover:text-teal-600 hover:border-teal-800 delay-100 ease-in-out group text-slate-200 font-semibold flex-col hover:border-4 text-[1.1rem] border-none bg-gradient-to-r from-cyan-800 to-sky-800 hover:bg-gradient-to-r hover:from-cyan-950 hover:to-sky-950 backdrop-blur-[100px] shadow-[#13456c] rounded-lg shadow-md card md:m-4 h-[9rem] w-[9rem] md:h-[11rem] md:w-[11rem] m-3 flex justify-between sm:justify-center align-center p-3 sm:text-lg ">
+								{/* <div>
+
+{
+	
+	?<p className="bg-sky-950 border-blue-500 w-[80%] text-blue-100 text-md rounded-none font-medium border-2  -2 px-auto text-center py-0.5 mx-auto  dark:bg-blue-900 dark:text-blue-100">FlagShip</p>:''
+}					
+								</div> */}
+		<div className="eventCart transition duration-100 text-md hover:text-gl hover:text-teal-600 hover:border-teal-800 delay-100 ease-in-out group text-slate-200 font-semibold flex-col hover:border-4 text-[1.1rem] border-none bg-gradient-to-r from-cyan-800 to-sky-800 hover:bg-gradient-to-r hover:from-cyan-950 hover:to-sky-950 backdrop-blur-[100px] shadow-[#13456c] rounded-lg shadow-md card md:m-4 h-[9rem] w-[9rem] md:h-[11rem] md:w-[11rem] m-3 flex justify-between sm:justify-center align-center p-3 sm:text-lg ">
 								<img
 									src={img}
 									alt=""
@@ -157,12 +166,13 @@ const EventCard = ({ img, item }) => {
 												</p>
 											</div>
 											{item.id === 103 ? (
-												<Link
-													to="https://nth.credenz.in/register"
-													className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md h-fit hover:bg-teal-800 hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2">
-													{' '}
-													Register
-												</Link>
+												// <Link
+												// 	to="https://nth.credenz.in/register"
+												// 	className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-900 bg-blue-100 border border-transparent rounded-md h-fit hover:bg-teal-800 hover:text-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-green-500 focus-visible:ring-offset-2">
+												// 	{' '}
+												// 	Register
+												// </Link>
+												''
 											) : (
 												<button
 													type="button"

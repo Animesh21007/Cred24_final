@@ -12,16 +12,16 @@ import Webweaver from './logos/webweaver.png';
 import Enigma from './logos/enigma.png';
 // import Enigma from './logos/'
 const Logo = {
-	101: Clash,
-	102: RC,
-	103: NTH,
-	104: WallStreet,
-	105: Bplan,
-	106: Enigma,
-	107: Datawiz,
-	108: Quizillionaire,
-	109: Cretronix,
-	110: Webweaver,
+	101: Webweaver,
+	102: Clash,
+	103: RC,
+	104: NTH,
+	105: WallStreet,
+	106: Bplan,
+	107: Enigma,
+	108: Datawiz,
+	109: Quizillionaire,
+	110: Cretronix,
 	111: Roboliga,
 	112: Xodia,
 };
