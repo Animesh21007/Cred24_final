@@ -185,17 +185,18 @@ const EventJson = [
 		body: "'The stock market is a device for transferring money from the impatient to the patient.' - Warren Buffett Interested in learning about the stock market and improving your investment skills? Well you are in luck, as we bring you, 'Wall Street'",
 		structure:
 			"Wall Street is a virtual Stock Market where you'll get the chance to simulate investing in the stock market and see how your choices stack up against others. With no real money on the line, you can experiment with different strategies and learn from your successes and failures.",
-		rules: {
-			1: 'Each participant will be provided with a unique ID and password to log on the Wallstreet website and start playing.He/She is expected to buy stocks and subscribe to IPOs using the cash amount.',
-			2: 'IPOs will be floated every day before start of the actual trading days to which participants can subscribe. ',
-			3: 'IPO allocation will be visible on the first day of actual trading and will be done on a first come first serve basis. So keep an eye on our social media handles for constant updates.',
-			4: 'As soon as the market opens at 9:00 AM on the first day, participant can see all the stocks along with their listing price.',
-			5: "The market will be up from 9:00 AM to 3:00 PM for 3 days.This period is defined as 'day' henceforth in the document.",
-			6: 'Any buy bid or sell ask can be made within a margin of ±2% of the current share price.For ex,if the current market price of a share is Rs.100/-,a buy or sell bid can be made from any range between Rs. 98/- Rs.102/-',
-			7: "The Ranking of the user is decided using a 'Valuation Formula'.Valuation of the user will be 60% of his total asset value in Shares acquired (according to current market prices) + 40% of the cash balance in his account.This total will be termed as the valuation amount.",
-			8: 'Participants can be disqualified for MALPRACTICES.',
-			9: 'News regarding the listed companies would be displayed 15 minutes',
-		},
+			rules: 
+			{
+				1: 'Each participant will be provided with a unique ID and password to log on the Wallstreet website and start playing. He/She is expected to buy stocks and subscribe to IPOs using the cash amount.',
+				2: 'IPOs will be floated every day before start of the actual trading days to which participants can subscribe. ',
+				3: 'IPO allocation will be visible on the first day of actual trading. So keep an eye on our social media handles for constant updates.',
+				4: 'As soon as the market opens at 9:00 AM on the first day, participant can see all the stocks along with their listing price.',
+				5: "The market will be up from 9:00 AM to 3:00 PM. This period is defined as 'day' henceforth in the document.",
+				6: 'Any buy bid or sell ask rounded off must be to current price. ex. If current price is ₹100.78 then but bid or sell ask must be in range ₹100 to ₹101',
+				7: "The Ranking of the user is decided using a 'Valuation Formula'. Valuation of the user will be 60% of his total asset value in Shares acquired (according to current market prices) + 40% of the cash balance in his account. This total will be termed as the valuation amount.",
+				8: 'Participants can be disqualified for MALPRACTICES.',
+				9: 'News regarding the listed companies would be displayed 10 minutes',
+			},
 		id: 104,
 		amount: 50,
 		count: 1,
@@ -218,8 +219,8 @@ const EventJson = [
 			},
 		],
 		datetime: [
-			'IPO release: From 16th April',
-			'Trading: 19th-20th April 2024, 9:00 AM to 3:00 PM',
+			'IPO release: From 18th April and 19th April',
+			'Trading: 20th and 21st April, 9:00 AM to 3:00 PM',
 		],
 	},
 	{
@@ -521,7 +522,7 @@ const EventJson = [
 			3: 'Participants have to build bots capable of competing against other bots in the provided game environment and submit them before the given deadline.',
 			4: 'Participants can submit both RL (Reinforcement Learning) based as well as algorithmic bots.',
 			5: 'The standard format of bot submission would be conveyed to participants.',
-			6: 'The matches between bots will be conducted and streamed on the 21th April',
+			6: 'The matches between bots will be conducted and streamed on the 21st April',
 		},
 		amount: 50,
 		count: 1,
@@ -546,7 +547,7 @@ const EventJson = [
 		datetime: [
 			'Environment Release: 19th April',
 			'Bot Submission: 19th and 20th April',
-			'Matches: 21th April',
+			'Matches: 21st April',
 		],
 	},
 ];
