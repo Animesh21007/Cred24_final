@@ -25,7 +25,7 @@ const Events = () => {
 			setTimeout(() => {
 				dispatch(buyPass(Event));
 			}, 1000);
-			dispatch(totalsome(250));
+			dispatch(totalsome(100));
 			navigate('/paymentpass');
 		} else {
 			toast.warning('Login First!', {

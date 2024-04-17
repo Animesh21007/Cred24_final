@@ -7,7 +7,7 @@ import { useSelector } from 'react-redux';
 import PaymentOptionsPass from './PaymenOptionsPass';
 
 const PassPayment = () => {
-	const totalprice = 250;
+	const totalprice = 100;
 	const link = `upi://pay?pa=scrtspuneinstofcompu.62804004@hdfcbank&pn=PICT_IEEE_PISB&am=${totalprice}&mc=0000&tn=Credenz24 IEEE&cu=INR`;
 	const [qrCodeDataUrl, setQrCodeDataUrl] = useState('');
 	const [paymentMode, setPaymentMode] = useState(1);
@@ -73,7 +73,7 @@ const PassPayment = () => {
 					<p className="px-2 m-2">
 						{' '}
 						{
-							' 4) After Successfull payment, Enter Transaction ID and click confirm payment.'
+							' 4) After Successfull payment, Enter Transaction ID/UTR ID/UPI Ref ID/Enter Bank Reference ID and click confirm payment.'
 						}
 					</p>
 					<p className="px-2 m-2">

@@ -162,7 +162,7 @@ const [isFlagShip, setIsFlagShip] = useState(false);
 												</h3>
 												<p className="flex flex-row px-1 m-1 text-green-500 rounded-md md:text-xl text-md py-auto">
 													<p className="px-1">&#8377;</p>
-													{item.id !== 103 ? item.amount : 'Free'}
+													{item.id !== 103 && item.id!== 110? item.amount : 'Free'}
 												</p>
 											</div>
 											{item.id === 103 ? (

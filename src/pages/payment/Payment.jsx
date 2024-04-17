@@ -74,7 +74,7 @@ const Payment = () => {
 					<p className="px-2 m-2">
 						{' '}
 						{
-							' 4) After Successfull payment, Enter Transaction ID and click confirm payment.'
+							' 4) After Successfull payment, Enter Transaction ID/UTR ID/UPI Ref ID/Enter Bank Reference ID and click confirm payment.'
 						}
 					</p>
 					<p className="px-2 m-2">
