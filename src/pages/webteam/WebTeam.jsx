@@ -125,7 +125,7 @@ const WebTeam = () => {
 			key: uuidv4(),
 			content:<CardNew
 			imagen={am}
-			name={'Aayush Mohad'}
+			name={'Aayush Mohod'}
 			
 		/>,
 		},

@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import { Parallax, ParallaxLayer } from '@react-spring/parallax';
 import ContactProfileCard from '../../components/cards/ContactProfileCard';
 import { BackgroundGradient } from '../../components/ui/background-gradient';
@@ -13,6 +15,11 @@ import imgpb from '../../assets/admin-photos/Pranavb.jpg';
 import imgpr from '../../assets/admin-photos/Premdeshmukh.jpeg';
 import { useWindowSize } from 'react-use';
 import Footer from '../../components/Footer';
+import fetchai from '../../assets/sponsorlogos/Primary logo_brand-gradient copy.png'
+import ims from '../../assets/sponsorlogos/ims.jpg'
+import pizzeria from '../../assets/sponsorlogos/pizzeria.jpg'
+import nescafe from '../../assets/sponsorlogos/nescafe.jpg'
+import ritik from '../../assets/sponsorlogos/ritik.jpg'
 const Sponsors = () => {
 	const { width } = useWindowSize();
 	const [pages, setPages] = useState(3);
@@ -21,10 +28,10 @@ const Sponsors = () => {
 		// Update pages and offset values based on screen width
 		if (width < 425) {
 			setPages(3.9); // Set pages value for small screens
-			setOffset(1.8);
+			setOffset(2.5);
 		} else {
-			setPages(1.5); // Set pages value for larger screens
-			setOffset(2); // Set offset value for larger screens
+			setPages(2); // Set pages value for larger screens
+			setOffset(2.5); // Set offset value for larger screens
 		}
 	}, [width]); // Update whenever width changes
 
@@ -71,7 +78,7 @@ const Sponsors = () => {
 					<ParallaxLayer offset={0} speed={0.35}>
 						<div className="animation_layer parallax3" id="layers3"></div>
 					</ParallaxLayer>
-					<ParallaxLayer offset={0} speed={-0.3}>
+					<ParallaxLayer offset={0} speed={-0.1}>
 						<div className="flex items-start justify-center font-extrabold text-center text-blue-200 align-middle animation_layer parallax3 mt-[10rem] sm:mt-24 md:mt-12 lg:mt-8 text-5xl sm:text-8xl md:text-7xl lg:text-9xl">
 							<p className="mt-[20%]">Sponsors</p>
 						</div>
@@ -103,8 +110,16 @@ const Sponsors = () => {
 					<ParallaxLayer offset={0} speed={0.35}>
 						<div className="animation_layer parallax3" id="layers12"></div>
 					</ParallaxLayer>
-					<ParallaxLayer offset={0.95} speed={0.25}>
-						<div className="p-10 m-10 text-sm font-extrabold text-center border border-blue-300 md:text-5xl text-sky-300 rounded-2xl">
+					<ParallaxLayer offset={0.98} speed={0.25}>
+						<div className='flex justify-center text-white text-4xl'><p>Title Sponsor</p></div>
+						<LazyLoadImage
+				src={fetchai}
+				alt="Fetch Ai"
+				width="500"
+				height="500"
+				className="mx-auto my-5"
+			/>
+						{/* <div className="p-10 m-10 text-sm font-extrabold text-center border border-blue-300 md:text-5xl text-sky-300 rounded-2xl">
 							<Typewriter
 								options={{
 									loop: true,
@@ -120,12 +135,12 @@ const Sponsors = () => {
 										.start();
 								}}
 							/>
-						</div>
-						<div className="flex-col m-10 ">
-							<div className="text-xl font-extrabold text-center text-white md:text-2xl lg:text-3xl">
+						</div> */}
+						{/* <div className="flex-col m-10 "> */}
+							{/* <div className="text-xl font-extrabold text-center text-white md:text-2xl lg:text-3xl">
 								Finance Team
-							</div>
-							<div className="flex items-center gap-5 mt-10 justify-evenly cardb">
+							</div> */}
+							{/* <div className="flex items-center gap-5 mt-10 justify-evenly cardb">
 								<Card
 									className=""
 									name={'Prem Deshmukh'}
@@ -146,11 +161,44 @@ const Sponsors = () => {
 									// posit={'Secretary of Finance'}
 
 									imagen={imgpb}></Card>
-							</div>
+							</div> */}
 							{/* <div className='flex mr-20 md:hidden oldd '>
 						   <Carousel cards={cards} height="500px" width="100%"/>
 	                   </div> */}
-						</div>
+						{/* </div> */}
+					</ParallaxLayer>
+					<ParallaxLayer offset={1.1} speed={0.25}>
+						<div className='flex justify-center text-white text-4xl'><p>Education Sponsor</p></div>
+						<LazyLoadImage
+				src={ims}
+				alt="IMS"
+				width="300"
+				height="300"
+				className="mx-auto my-5"
+			/>
+
+					</ParallaxLayer>
+					<ParallaxLayer offset={1.8} speed={0.25}>
+						<div className='flex justify-center text-white text-4xl'><p>Food Sponsor</p></div>
+						<LazyLoadImage
+				src={pizzeria}
+				alt="Pizzeria"
+				width="300"
+				height="300"
+				className="mx-auto my-5"
+			/>
+
+					</ParallaxLayer>
+					<ParallaxLayer offset={2.2} speed={0.25}>
+						<div className='flex justify-center text-white text-4xl'><p>Beverage Sponsor</p></div>
+						<LazyLoadImage
+				src={nescafe}
+				alt="Pizzeria"
+				width="300"
+				height="300"
+				className="mx-auto my-5"
+			/>
+
 					</ParallaxLayer>
 					{/* <ParallaxLayer offset={2} style={{ marginTop: 200, }} speed={1}>
  

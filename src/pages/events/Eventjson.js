@@ -376,7 +376,7 @@ const EventJson = [
 				phone: '+91 98340 56254',
 			},
 			{
-				name: 'Aayush Mohad',
+				name: 'Aayush Mohod',
 				phone: '+91 8329465811',
 			},
 		],
