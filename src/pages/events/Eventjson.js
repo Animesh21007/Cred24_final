@@ -37,7 +37,7 @@ const EventJson = [
 		],
 		datetime: [
 			'Round 1 Start: 12-th April 2024',
-			'Round 1 Submission (Last Date) : 17th April 2024, 11:59 PM',
+			'Round 1 Submission (Last Date) : 18th April 2024, 11:59 PM',
 			'Round 2: 20th April 2024, 10:00 AM to 6:00 PM (Offline)',
 			
 		],
@@ -380,7 +380,7 @@ const EventJson = [
 				phone: '+91 8329465811',
 			},
 		],
-		prizes: [
+		prizes: [ 
 			{
 				1: 'To Be Declared',
 				// 2: 'Second Prize: Rs. 3000',
