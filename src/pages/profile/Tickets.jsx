@@ -33,7 +33,7 @@ const Tickets = ({ profileInfo }) => {
 									</div>
 									<div className="flex flex-row items-center justify-between p-2 my-2 text-lg text-center border-t-2 border-slate-700 font-[monospace]">
 										<div className="p-2 py-2 text-left md:border-0 border-l-">
-											<p className="text-blue-300">Order palced by:</p>
+											<p className="text-blue-300">Order placed by:</p>
 											<p className="text-slate-300">{val.user.username}</p>
 											<p className="pt-2 text-blue-300">Date:</p>
 											<p className="text-slate-300">{val.order_date}</p>

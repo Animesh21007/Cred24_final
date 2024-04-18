@@ -178,7 +178,7 @@ const JoinTeam = () => {
 				<input
 					{...register('team_id', { maxLength: 15 })}
 					placeholder="Team ID"
-					className="bg-blue-950 text-lg py-3 font-semibold text-slate-100 border-none placeholder:text-[1.07rem] border mx-auto border-gray-300 sm:text-sm rounded-lg focus:outline-none focus:border-cyan-700 focus:ring-2 focus:ring-cyan-700 block p-2 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 px-4  my-4 w-[100%]"
+					className="bg-blue-950 text-lg py-3 font-semibold font-[Poppins] text-slate-100 border-none placeholder:text-[1.07rem] border mx-auto border-gray-300 sm:text-sm rounded-lg focus:outline-none focus:border-cyan-700 focus:ring-2 focus:ring-cyan-700 block p-2 dark:bg-gray-700 dark:border-blue-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 px-4  my-4 w-[100%]"
 					required
 				/>
 				<button
